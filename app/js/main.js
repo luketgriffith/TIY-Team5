@@ -1,6 +1,3 @@
-'use strict';
+"use strict";
 
-(function () {
-
-  console.log('It Works!');
-})();
+(function () {})();
