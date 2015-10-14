@@ -1,17 +1,24 @@
 
-var promise = $.getJSON('https://json-data.herokuapp.com/restaurant/special/1');
-  promise.then( function(res){
-    
-      var special= res.id;
-      var promise2= $.getJSON('https://json-data.herokuapp.com/restaurant/menu/2');
-        promise2.then(function(x){
-          var menu=x.breakfast;
-          var item= menu[special];
-          var template= `<p class= 'specialTitle'>${item.item}</p>
-          <p class='specialDesc'>${item.description}</p>
-          <p class='specialPrice'>$${item.price}</p>
+ var special= $.getJSON('https://json-data.herokuapp.com/restaurant/special/1');
+  special.then( function(x){
+    var y= x.menu_item_id;
+
+    var promise = $.getJSON('https://json-data.herokuapp.com/restaurant/menu/3');
+    promise.then( function(res){
+      var items= res.entrees;
+      console.log(items);
+      _.each(items, function(z){
+        if(z.id === y){
+          
+          var template= `<p class= 'specialTitle'>${z.item}</p>
+          <p class='specialDesc'>${z.description}</p>
+          <p class='specialPrice'>$${z.price}</p>
           `
           $('.special').append(template);
-
-        })
-   }); 
+        }
+      })
+  
+      
+});
+     });
+     
