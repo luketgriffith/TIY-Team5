@@ -23,6 +23,18 @@ header {
   display: inline-block;
   float: left;
   font-size: 3em;
+  font-family: 'Amatic SC', cursive;  
+  .catcontain {
+    width: 50px;
+    display: inline-block;
+  }
+  img {
+    width: 100%;
+    display: inline-block;
+  }
+  h2 {
+    display: inline-block;
+  }
 }
 
 .social {
@@ -94,6 +106,8 @@ header {
   background-color: #EBEBEB;
   height: 300px;
   border: 1px solid #555555;
+  margin-bottom: 30px;
+ 
  
   .newsHead{
     @include outer-container;
@@ -160,6 +174,8 @@ header {
   background-color: #EBEBEB;
   height: 300px;
   border: 1px solid #555555;
+  margin-bottom: 30px;
+ 
  
 }
 .specialImg{
@@ -193,6 +209,7 @@ header {
   background-color: #EBEBEB;
   height: 300px;
   border: 1px solid #555555;
+  margin-bottom: 30px;
  
 
 } 
@@ -267,8 +284,118 @@ header {
   }
 }
 
+
+/*************************Slider Stuff************************/
+.buttons{
+  height: 50px;
+  span{
+    line-height: 50px;
+    font-size: 24px;
+    margin: 20px 30px;
+    padding: 10px;
+    background-color: #F7F7F7;
+    
+
+  }
+}
+.ourStoryTab{
+  float: left;
+  max-width: 0px;
+
+  overflow: scroll;
+  text-overflow: hidden;
+  transition: all 1s ease;
+  background-color: #F7F7F7;
+  
+  img{
+    float: left;
+    max-width: 45%;
+    height: 200px;
+    margin: 25px 2.5% ;
+  }
+  p{
+    margin: 10px;
+    background-color: #F7F7F7;
+  }
+}
+.menu{
+  float: left;
+  max-width: 0px;
+  overflow: scroll;
+  text-overflow: hidden;
+  transition: all 1s ease;
+  background-color: #F7F7F7;
+  .menuItemTitle{
+    margin: 10px;
+  }
+  .menuItemPrice{
+    font-size: 14px;
+    margin: 10px;
+  }
+  .menuItemDescription{
+    font-size: 12px;
+    margin: 10px;
+  }
+  .menuSpecialIcons{
+    margin: 10px;
+  }
+}
+.reservationTab{
+  font-size: 14px;
+  float: left;
+  max-width: 0px;
+  overflow: hidden;
+  text-overflow: hidden;
+  transition: all 1s ease;
+  background-color: #F7F7F7;
+  form{
+    width: 660px;
+    p{
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 5%;
+    }
+    input{
+      width: 90%;
+      margin-top: 5px;
+      
+    }
+    select{
+      margin-top: 5px;
+      margin-left: 5%;
+      width: 45%
+    }
+  } button{
+    height: 40px;
+    width: 20%;
+    background-color: gray;
+    color: white;
+    margin-top: 20px;
+    margin-left: 5%;
+    border-radius: 15em;
+  }
+}
+  
+.shown{
+  float: left;
+  max-width: 660px;
+  border: 1px solid black;
+  height: 400px;
+  background-color: #F7F7F7;
+}
+.selected{
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid #F7F7F7;
+  overflow: hidden;
+}
+
 footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;
+  p {
+    padding-bottom: 20px;
+  }
 }
 
