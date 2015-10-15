@@ -1,18 +1,6 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-.javadiv{
-  @include outer-container;
-  h3{
-    padding: 10px 0;
-    margin: 20px 18px;
-    border-bottom: 1px solid #555555;
-    color: #303030;
-    font-weight: normal;
-  }
-}
-
-
 body {
   font-size: 62.5%;
   width: 1000px;
@@ -22,6 +10,7 @@ body {
 header {
   height: 100px;
   border-bottom: 1px solid #C3C3C3;
+  overflow:hidden;
 }
 
 .logo {
@@ -49,19 +38,51 @@ header {
   }
 }
 
+.mainImage {
+  background-image: url(http://www.hamms-hat.com/wp-content/uploads/2014/06/landl3.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+  border: 1px solid black;
+  background-position: 0 -325px;
+
+}
+
+
+.javadiv{
+  @include outer-container;
+  width: 100%;
+  max-width: 100%;
+ 
+  h3{
+    padding: 10px 0;
+    margin: 20px 18px;
+    margin-top: 10px;
+    border-bottom: 1px solid #555555;
+    color: #303030;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+   
+
 
 .news{
+
   @include span-columns(4);
   float: left;
   background-color: #EBEBEB;
-  height: 325px;
+  height: 300px;
+  border: 1px solid #555555;
+ 
   .newsHead{
     @include outer-container;
     
     margin: 0 3.5%
   }
   .newsTitle{ 
-    @include span-columns (8);
+    @include span-columns (9);
     float: left;
     font-size: 14px;
     border-bottom: none;
@@ -74,9 +95,10 @@ header {
     float: right; 
     font-size: 14px;
     border-bottom: none;
-    margin: 0 5px;
+    margin: 0;
     font-weight: bold;
     font-style: italic;
+    padding-left: 10px;
   }
 }
 .news p{   
@@ -84,14 +106,26 @@ header {
     display: block;
     display: -webkit-box;
     max-width: 95%;
-    height: 109.2px;
+    height: 146.2px;
     margin: 0 2.5%;
     font-size: 12px;
     line-height: 1.4;
-    -webkit-line-clamp: 7;
+    -webkit-line-clamp: 9;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.news a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+  float: right;
+  margin: 2px 8px;
+  padding: 2px;
+
+}
+.news h4{
+  margin-top: 4px;
 }
 .news a{
   text-decoration: none;
@@ -105,7 +139,9 @@ header {
   @include span-columns(4);
   float: left;
   background-color: #EBEBEB;
-  height: 325px;
+  height: 300px;
+  border: 1px solid #555555;
+ 
 }
 .specialImg{
   background-image: url('http://www.truefoodkitchen.com/wp-content/uploads/2013/03/mg_9050.jpg');
@@ -118,15 +154,16 @@ header {
 .special p{
   padding: 5px;
   font-size: 12px;
+  margin: 20px 5px;
 }
 .specialTitle{
-  @include span-columns(8);
+  @include span-columns(10);
   float: left;
   font-weight: bold;
 }
 .specialPrice{
   float: right;
-  @include span-columns(3);
+  @include span-columns(1);
 }
 .specialDesc{
   clear: both;
@@ -135,5 +172,54 @@ header {
   @include span-columns(4);
   float: left;
   background-color: #EBEBEB;
-  height: 325px;
+  height: 300px;
+  border: 1px solid #555555;
+ 
+
+} 
+.location p{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 25px;
 }
+.location ul{
+  padding: 0;
+  padding-left: 29px;
+}
+
+.location li{
+  display: inline-block;
+  font-size: 12px;
+  margin: 20px 3px;
+}
+
+.menu {
+  width: 700px;
+  .menuItemTitle {
+    font-size: 16px;
+    float:left;
+  }
+
+  .menuItemPrice {
+    float: right;
+  }
+
+  .menuItemDescription {
+    clear:both;
+  }
+
+  .menuSpecialIcons {
+    clear:both;
+    color: red;
+  }
+
+}
+
+footer {
+  height: 20px;
+  border-top: 1px solid #C3C3C3;
+}
+
