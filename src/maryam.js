@@ -3,7 +3,7 @@ function foodPics(setId) {
   
   var URL = 
 
-    'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=315259924b1acacbb7bf64f20f866672&tags=pub+food&format=json&nojsoncallback=1&api_sig=7c5b7e3f6b301862923aeffd08799421';
+    'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=315259924b1acacbb7bf64f20f866672&tags=pub+food&format=json&nojsoncallback=1';
 
 
   $.getJSON(URL, function(data){
@@ -78,6 +78,7 @@ function foodPics(setId) {
 
     // "&format=json&nojsoncallback=1";
 
+//=============
 //   var apiKEY='';
 // }
 
