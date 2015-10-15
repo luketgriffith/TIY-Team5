@@ -6,23 +6,75 @@ html {
 *::before {
   box-sizing: inherit; }
 
+.javadiv {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .javadiv::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .javadiv h3 {
+    padding: 10px 0;
+    margin: 20px 18px;
+    border-bottom: 1px solid #555555;
+    color: #303030;
+    font-weight: normal; }
+
 .news {
   float: left;
-  max-width: 25%;
-  margin: 2%;
-  background-color: #EBEBEB; }
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: left;
+  background-color: #EBEBEB;
+  height: 325px; }
+  .news:last-child {
+    margin-right: 0; }
+  .news h4 {
+    padding-left: 16px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px; }
+  .news .newsTitle {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    float: left; }
+    .news .newsTitle:last-child {
+      margin-right: 0; }
+  .news .newsDate {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    float: right;
+    padding-left: 70px; }
+    .news .newsDate:last-child {
+      margin-right: 0; }
+  .news .read {
+    border-bottom: none; }
 
 .news p {
   font-size: 12px;
   font-weight: normal;
   text-overflow: ellipsis;
-  background-color: #EBEBEB; }
+  background-color: #EBEBEB;
+  margin: 10px;
+  padding: 0px 7px;
+  clear: both; }
 
 .special {
   float: left;
-  max-width: 25%;
-  margin: 2%;
-  background-color: #EBEBEB; }
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: left;
+  background-color: #EBEBEB;
+  height: 325px; }
+  .special:last-child {
+    margin-right: 0; }
 
 .specialImg {
   background-image: url("http://www.truefoodkitchen.com/wp-content/uploads/2013/03/mg_9050.jpg");
@@ -34,6 +86,11 @@ html {
 
 .location {
   float: left;
-  max-width: 25%;
-  margin: 2%;
-  background-color: #EBEBEB; }
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: left;
+  background-color: #EBEBEB;
+  height: 325px; }
+  .location:last-child {
+    margin-right: 0; }

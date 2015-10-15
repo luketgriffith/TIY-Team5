@@ -1,23 +1,56 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
-
+.javadiv{
+  @include outer-container;
+  h3{
+    padding: 10px 0;
+    margin: 20px 18px;
+    border-bottom: 1px solid #555555;
+    color: #303030;
+    font-weight: normal;
+  }
+}
 .news{
+  @include span-columns(4);
   float: left;
-  max-width: 25%;
-  margin: 2%;
   background-color: #EBEBEB;
+  height: 325px;
+  // @include outer-container;
+  h4{padding-left: 16px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .newsTitle{
+    @include span-columns(6);
+    float: left;
+    
+  }
+  .newsDate{
+    @include span-columns(5);
+    // @include omega();
+    float: right;
+    padding-left: 70px;
+    
+  }
+  .read{
+    border-bottom: none;
+  }
 }
 .news p{
   font-size: 12px;
   font-weight: normal;
   text-overflow: ellipsis;
   background-color: #EBEBEB;
+  margin: 10px;
+  padding: 0px 7px;
+  clear: both;
 }
 .special{
+  @include span-columns(4);
   float: left;
-  max-width: 25%;
-  margin: 2%;
   background-color: #EBEBEB;
+  height: 325px;
 }
 .specialImg{
   background-image: url('http://www.truefoodkitchen.com/wp-content/uploads/2013/03/mg_9050.jpg');
@@ -28,8 +61,8 @@
   margin: 0 5%;
 }
 .location{
+  @include span-columns(4);
   float: left;
-  max-width: 25%;
-  margin: 2%;
   background-color: #EBEBEB;
+  height: 325px;
 }
