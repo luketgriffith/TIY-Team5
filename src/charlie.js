@@ -10,7 +10,7 @@
     $('.beer').append(`
     <div class="menuItemTitle">${ obj.item }</div>
     <div class="menuItemPrice">${ obj.price }</div>
-    <div class="menuItemDescripti;on">${ obj.description }</div>
+    <div class="menuItemDescription">${ obj.description }</div>
     `)
 
     if (obj.allergies === 1) {

@@ -9,7 +9,7 @@
 
   var beerData = function beerData(obj) {
 
-    $('.beer').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescripti;on">' + obj.description + '</div>\n    ');
+    $('.beer').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescription">' + obj.description + '</div>\n    ');
 
     if (obj.allergies === 1) {
       $('.beer').append("<div class='allergyContainer'>ALLERGY</div>");
