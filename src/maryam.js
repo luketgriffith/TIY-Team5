@@ -22,26 +22,37 @@ function foodPics(setId) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Ignore. (notes below)
+
 // $(document).ready(function() {
   
   //fill in a set number here if needed
 
 //   foodPics('');
 // });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   //let foodPicturesURL='https://api.flickr.com/services/rest       [fill in apiKEY here] '
