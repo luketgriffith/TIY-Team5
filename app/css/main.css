@@ -19,7 +19,15 @@ header {
 .logo {
   display: inline-block;
   float: left;
-  font-size: 3em; }
+  font-size: 3em;
+  font-family: 'Amatic SC', cursive; }
+  .logo .catcontain {
+    width: 50px;
+    display: inline-block; }
+  .logo img {
+    width: 100%; }
+  .logo h2 {
+    display: inline-block; }
 
 .social {
   display: inline-block;
@@ -341,3 +349,5 @@ header {
 footer {
   height: 20px;
   border-top: 1px solid #C3C3C3; }
+  footer p {
+    padding-bottom: 20px; }
