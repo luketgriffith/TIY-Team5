@@ -6,22 +6,6 @@ html {
 *::before {
   box-sizing: inherit; }
 
-<<<<<<< HEAD
-.javadiv {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .javadiv::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .javadiv h3 {
-    padding: 10px 0;
-    margin: 20px 18px;
-    border-bottom: 1px solid #555555;
-    color: #303030;
-    font-weight: normal; }
-=======
 body {
   font-size: 62.5%;
   width: 1000px;
@@ -50,7 +34,21 @@ header {
   .social #ot {
     width: 50px;
     padding-bottom: 5px; }
->>>>>>> c79e03f5aa804f57655d7dfbb2dfc5482d281523
+
+.javadiv {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .javadiv::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .javadiv h3 {
+    padding: 10px 0;
+    margin: 20px 18px;
+    border-bottom: 1px solid #555555;
+    color: #303030;
+    font-weight: normal; }
 
 .news {
   float: left;
