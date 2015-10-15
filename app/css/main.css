@@ -31,39 +31,19 @@ html {
   height: 325px; }
   .news:last-child {
     margin-right: 0; }
-  .news h4 {
-    padding-left: 16px;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 12px; }
-  .news .newsTitle {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    float: left; }
-    .news .newsTitle:last-child {
-      margin-right: 0; }
-  .news .newsDate {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
-    float: right;
-    padding-left: 70px; }
-    .news .newsDate:last-child {
-      margin-right: 0; }
-  .news .read {
-    border-bottom: none; }
 
 .news p {
+  display: block;
+  display: -webkit-box;
+  max-width: 95%;
+  height: 109.2px;
+  margin: 0 2.5%;
   font-size: 12px;
-  font-weight: normal;
-  text-overflow: ellipsis;
-  background-color: #EBEBEB;
-  margin: 10px;
-  padding: 0px 7px;
-  clear: both; }
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .special {
   float: left;

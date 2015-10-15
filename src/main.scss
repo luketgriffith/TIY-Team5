@@ -15,37 +15,25 @@
   float: left;
   background-color: #EBEBEB;
   height: 325px;
-  // @include outer-container;
-  h4{padding-left: 16px;
-    font-style: italic;
-    font-weight: normal;
+
+
+}
+.news p{   
+
+    display: block;
+    display: -webkit-box;
+    max-width: 95%;
+    height: 109.2px;
+    margin: 0 2.5%;
     font-size: 12px;
-  }
-  .newsTitle{
-    @include span-columns(6);
-    float: left;
-    
-  }
-  .newsDate{
-    @include span-columns(5);
-    // @include omega();
-    float: right;
-    padding-left: 70px;
-    
-  }
-  .read{
-    border-bottom: none;
-  }
+    line-height: 1.4;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.news p{
-  font-size: 12px;
-  font-weight: normal;
-  text-overflow: ellipsis;
-  background-color: #EBEBEB;
-  margin: 10px;
-  padding: 0px 7px;
-  clear: both;
-}
+
+
 .special{
   @include span-columns(4);
   float: left;
