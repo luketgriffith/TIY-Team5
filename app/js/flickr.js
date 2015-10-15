@@ -10,7 +10,7 @@
 
     _.each(pics, function (pic) {
 
-      var imgLink = '\'https://farm' + pic.farm + '.staticflickr.com/' + pic.server + '/' + pic.id + '_' + pic.secret + '.jpg\'';
+      var imgLink = '\'https://farm' + pic.farm + '.staticflickr.com/' + pic.server + '/' + pic.id + '_' + pic.secret + '_m.jpg\'';
       var imgBlock = '<div class= "flickrImg">\n       <img src=' + imgLink + '>\n     </div>';
 
       $('.foodPhotos').append(imgBlock);
