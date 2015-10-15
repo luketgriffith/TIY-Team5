@@ -1,3 +1,4 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 html {
   box-sizing: border-box; }
 
@@ -5,6 +6,10 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; }
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif; }
 
 body {
   font-size: 62.5%;
@@ -247,6 +252,28 @@ header {
 
 .menu {
   width: 700px; }
+  .menu .entypo-attention {
+    font-size: 16px;
+    color: red;
+    display: inline;
+    position: relative; }
+  .menu .entypo-attention:hover:after {
+    background: #E7E7E7;
+    color: #545454;
+    border-radius: 2px;
+    border: 1px solid #D1D1D1;
+    content: "Allergy info";
+    padding: 5px 200px 5px 15px; }
+  .menu .entypo-star {
+    font-size: 16px;
+    color: #FFCD00; }
+  .menu .entypo-star:hover:after {
+    background: #E7E7E7;
+    color: #545454;
+    border-radius: 2px;
+    border: 1px solid #D1D1D1;
+    content: "Favorite";
+    padding: 5px 200px 5px 15px; }
   .menu .menuItemTitle {
     font-size: 16px;
     float: left; }
@@ -255,8 +282,7 @@ header {
   .menu .menuItemDescription {
     clear: both; }
   .menu .menuSpecialIcons {
-    clear: both;
-    color: red; }
+    clear: both; }
 
 /*************************Slider Stuff************************/
 .buttons {

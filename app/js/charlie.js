@@ -6,44 +6,43 @@
   var menuURL = 'https://json-data.herokuapp.com/restaurant/menu/3';
 
   // templates
-
   var beerData = function beerData(obj) {
 
-    $('.menu').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescription">' + obj.description + '</div>\n    ');
+    $('.beer').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescription">' + obj.description + '</div>\n    ');
 
     if (obj.allergies === 1) {
-      $('.menu').append("<div class='menuSpecialIcons'>ALLERGY</div>");
+      $('.beer').append("<div class='menuSpecialIcons'><span class='entypo-attention'></span></div>");
     };
 
     if (obj.favorite === 1) {
-      $('.menu').append("<div class='menuSpecialIcons'>FAVORITE</div>");
+      $('.beer').append("<div class='menuSpecialIcons'><span class='entypo-star' title='Favorite'></span></div>");
     };
 
-    $('.menu').append("<br>");
+    $('.beer').append("<br>");
   };
 
   var entreesData = function entreesData(obj) {
-    $('.menu').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescription">' + obj.description + '</div>\n    ');
+    $('.entrees').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescription">' + obj.description + '</div>\n    ');
 
     if (obj.allergies === 1) {
-      $('.menu').append("<div class='menuSpecialIcons'>ALLERGY</div>");
+      $('.entrees').append("<div class='menuSpecialIcons'><span class='entypo-attention'></span></div>");
     };
 
     if (obj.favorite === 1) {
-      $('.menu').append("<div class='menuSpecialIcons'>FAVORITE</div>");
+      $('.entrees').append("<div class='menuSpecialIcons'><span class='entypo-star'></span></div>");
     };
 
-    $('.menu').append("<br>");
+    $('.entrees').append("<br>");
   };
 
   var gamesData = function gamesData(obj) {
-    $('.menu').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescription">' + obj.description + '</div>\n    ');
+    $('.games').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescription">' + obj.description + '</div>\n    ');
 
     if (obj.favorite === 1) {
-      $('.menu').append("<div class='menuSpecialIcons'>FAVORITE</div>");
+      $('.games').append("<div class='menuSpecialIcons'><span class='entypo-star'></span></div>");
     };
 
-    $('.menu').append("<br>");
+    $('.games').append("<br>");
   };
 
   // function to put menu items on page
