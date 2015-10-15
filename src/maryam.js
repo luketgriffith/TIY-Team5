@@ -28,6 +28,9 @@ function foodPics(setId) {
     $('.main')removeClass('main');
 
   })
+
+  .filter(location.hash).click();
+  
 });
 
 
