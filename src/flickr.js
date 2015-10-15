@@ -9,7 +9,7 @@ let flpics = $.getJSON(url).then(function(obj){
   _.each(pics, function(pic){
 
 
-  let imgLink  = `'https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg'`
+  let imgLink  = `'https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg'`
   let imgBlock =  
     `<div class= "flickrImg">
        <img src=${imgLink}>
