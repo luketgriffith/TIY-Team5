@@ -36,6 +36,21 @@ header {
     width: 50px;
     padding-bottom: 5px; }
 
+.javadiv {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .javadiv::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .javadiv h3 {
+    padding: 10px 0;
+    margin: 20px 18px;
+    border-bottom: 1px solid #555555;
+    color: #303030;
+    font-weight: normal; }
+
 .mainImage {
   background-image: url(http://www.hamms-hat.com/wp-content/uploads/2014/06/landl3.jpg);
   background-size: cover;
@@ -231,6 +246,68 @@ header {
   .menu .menuSpecialIcons {
     clear: both;
     color: red; }
+
+/*************************Slider Stuff************************/
+.buttons {
+  height: 50px; }
+  .buttons span {
+    line-height: 50px;
+    font-size: 24px;
+    margin: 20px;
+    padding: 10px; }
+
+.ourStoryTab {
+  float: left;
+  max-width: 0px;
+  overflow: scroll;
+  text-overflow: hidden;
+  transition: all 1s ease; }
+  .ourStoryTab img {
+    float: left;
+    max-width: 45%;
+    height: 200px;
+    margin: 25px 2.5%; }
+  .ourStoryTab p {
+    margin: 10px; }
+
+.menu {
+  float: left;
+  max-width: 0px;
+  overflow: scroll;
+  text-overflow: hidden;
+  transition: all 1s ease; }
+  .menu .menuItemTitle {
+    margin: 10px; }
+  .menu .menuItemPrice {
+    font-size: 14px;
+    margin: 10px; }
+  .menu .menuItemDescription {
+    font-size: 12px;
+    margin: 10px; }
+  .menu .menuSpecialIcons {
+    margin: 10px; }
+
+.reservationTab {
+  font-size: 14px;
+  padding: 5px;
+  float: left;
+  max-width: 0px;
+  overflow: hidden;
+  text-overflow: hidden;
+  transition: all 1s ease; }
+  .reservationTab form {
+    width: 660px; }
+    .reservationTab form p {
+      font-size: 14px;
+      font-weight: bold; }
+    .reservationTab form input {
+      width: 95%; }
+
+.shown {
+  float: left;
+  max-width: 660px;
+  border: 1px solid black;
+  height: 400px; }
 
 footer {
   height: 20px;

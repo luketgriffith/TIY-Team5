@@ -23,24 +23,48 @@ function foodPics(setId) {
 
 //for slider div
 
-(function slider(){
-  $('.sliderSetup').children('div').click(function(){
-    $('.main')removeClass('main');
+// (function slider(){
+//   $('.sliderSetup').children('div').click(function(){
+//     $('.main')removeClass('main');
 
-  })
+//   })
 
-  .filter(location.hash).click();
+//   .filter(location.hash).click();
   
+// });
+
+
+
+
+
+
+
+
+(function (){
+  
+var para = $('#storyTitle');
+para.on('click', function(){
+
+   $('.ourStoryTab').addClass('shown');
+   $('.menu').removeClass('shown');
+   $('.reservationTab').removeClass('shown');
 });
 
+var para2 = $('#menuTitle');
+para2.on('click', function(){
+  $('.menu').addClass('shown');
+   $('.ourStoryTab').removeClass('shown');
+   $('.reservationTab').removeClass('shown');
+});
 
-
-
-
-
-
-
-
+var para3 = $('#reservationsTitle');
+para3.on('click', function(){
+  $('.reservationTab').addClass('shown');
+   $('.menu').removeClass('shown');
+   $('.ourStoryTab').removeClass('shown');
+});
+console.log('meow')
+})();
 
 
 

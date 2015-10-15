@@ -232,6 +232,84 @@ header {
 
 }
 
+
+/*************************Slider Stuff************************/
+.buttons{
+  height: 50px;
+  span{
+    line-height: 50px;
+    font-size: 24px;
+    margin: 20px;
+    padding: 10px;
+  }
+}
+.ourStoryTab{
+  float: left;
+  max-width: 0px;
+
+  overflow: scroll;
+  text-overflow: hidden;
+  transition: all 1s ease;
+  
+  img{
+    float: left;
+    max-width: 45%;
+    height: 200px;
+    margin: 25px 2.5% ;
+  }
+  p{
+    margin: 10px;
+  }
+}
+.menu{
+  float: left;
+  max-width: 0px;
+  overflow: scroll;
+  text-overflow: hidden;
+  transition: all 1s ease;
+  .menuItemTitle{
+    margin: 10px;
+  }
+  .menuItemPrice{
+    font-size: 14px;
+    margin: 10px;
+  }
+  .menuItemDescription{
+    font-size: 12px;
+    margin: 10px;
+  }
+  .menuSpecialIcons{
+    margin: 10px;
+  }
+}
+.reservationTab{
+  font-size: 14px;
+  padding: 5px;
+  float: left;
+  max-width: 0px;
+  overflow: hidden;
+  text-overflow: hidden;
+  transition: all 1s ease;
+  form{
+    width: 660px;
+    p{
+      font-size: 14px;
+      font-weight: bold;
+    }
+    input{
+      width: 95%;
+    }
+  }
+}
+  
+.shown{
+  float: left;
+  max-width: 660px;
+  border: 1px solid black;
+  height: 400px;
+}
+
+
 footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;

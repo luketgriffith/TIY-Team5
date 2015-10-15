@@ -1,8 +1,9 @@
+//for flickr pics on right hand side
 "use strict";
 
 function foodPics(setId) {
 
-  var URL = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=315259924b1acacbb7bf64f20f866672&tags=pub+food&format=json&nojsoncallback=1&api_sig=7c5b7e3f6b301862923aeffd08799421';
+  var URL = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=315259924b1acacbb7bf64f20f866672&tags=pub+food&format=json&nojsoncallback=1';
 
   $.getJSON(URL, function (data) {
     $.each(data.photoset.photo, function (i, item) {
@@ -17,52 +18,40 @@ function foodPics(setId) {
   });
 }
 
-// $(document).ready(function() {
+//for slider div
 
-//fill in a set number here if needed
+// (function slider(){
+//   $('.sliderSetup').children('div').click(function(){
+//     $('.main')removeClass('main');
 
-//   foodPics('');
+//   })
+
+//   .filter(location.hash).click();
+
 // });
 
-//let foodPicturesURL='https://api.flickr.com/services/rest       [fill in apiKEY here] '
+(function () {
 
-//"https://api.flickr.com/services/rest/" +
+  var para = $('#storyTitle');
+  para.on('click', function () {
 
-// "?method=flickr.photosets.getPhotos" + 
+    $('.ourStoryTab').addClass('shown');
+    $('.menu').removeClass('shown');
+    $('.reservationTab').removeClass('shown');
+  });
 
-//apiKey
+  var para2 = $('#menuTitle');
+  para2.on('click', function () {
+    $('.menu').addClass('shown');
+    $('.ourStoryTab').removeClass('shown');
+    $('.reservationTab').removeClass('shown');
+  });
 
-// "&api_key={{315259924b1acacbb7bf64f20f866672}}" + 
-
-//take another look @the setID below
-// "&photoset_id=" + 21277725634 +
-
-//1 is for all public photos
-
-// "&privacy_filter=1" +
-
-//increase '20' if more pics are needed
-
-// "&per_page=20" +
-
-// "&format=json&nojsoncallback=1";
-
-//   var apiKEY='';
-// }
-
-// $.getJSON('http://api.flickr.com/services/rest/'
-//     {
-//       method: 'flick.'
-//     }
-
-//   )
-
-// "http://api.flickr.com/services/rest/",
-//         {
-//             method: 'flickr.people.getPublicPhotos',
-//             api_key: apiKey,
-//             user_id: the_user_id,
-//             format: 'json',
-//             nojsoncallback: 1,
-//             per_page: 10 // you can increase this to get a bigger array
-//         },
+  var para3 = $('#reservationsTitle');
+  para3.on('click', function () {
+    $('.reservationTab').addClass('shown');
+    $('.menu').removeClass('shown');
+    $('.ourStoryTab').removeClass('shown');
+  });
+  console.log('meow');
+})();
