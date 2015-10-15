@@ -1,6 +1,11 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
+.social {
+  display: inline-block;
+  float: right;
+}
+
 .news{
   float: left;
   max-width: 25%;
