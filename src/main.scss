@@ -18,6 +18,18 @@ header {
   display: inline-block;
   float: left;
   font-size: 3em;
+  font-family: 'Amatic SC', cursive;  
+  .catcontain {
+    width: 50px;
+    display: inline-block;
+  }
+  img {
+    width: 100%;
+    display: inline-block;
+  }
+  h2 {
+    display: inline-block;
+  }
 }
 
 .social {
@@ -235,5 +247,8 @@ header {
 footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;
+  p {
+    padding-bottom: 20px;
+  }
 }
 
