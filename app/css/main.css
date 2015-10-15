@@ -6,6 +6,7 @@ html {
 *::before {
   box-sizing: inherit; }
 
+<<<<<<< HEAD
 .javadiv {
   max-width: 68em;
   margin-left: auto;
@@ -20,6 +21,36 @@ html {
     border-bottom: 1px solid #555555;
     color: #303030;
     font-weight: normal; }
+=======
+body {
+  font-size: 62.5%;
+  width: 1000px;
+  margin: 0 auto; }
+
+header {
+  height: 100px;
+  border-bottom: 1px solid #C3C3C3; }
+
+.logo {
+  display: inline-block;
+  float: left;
+  font-size: 3em; }
+
+.social {
+  display: inline-block;
+  float: right;
+  overflow: auto;
+  width: 200px;
+  margin-top: 40px; }
+  .social img {
+    width: 100%; }
+  .social .icon {
+    width: 40px;
+    display: inline-block; }
+  .social #ot {
+    width: 50px;
+    padding-bottom: 5px; }
+>>>>>>> c79e03f5aa804f57655d7dfbb2dfc5482d281523
 
 .news {
   float: left;

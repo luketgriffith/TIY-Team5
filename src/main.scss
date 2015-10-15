@@ -1,5 +1,6 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+
 .javadiv{
   @include outer-container;
   h3{
@@ -10,6 +11,45 @@
     font-weight: normal;
   }
 }
+
+
+body {
+  font-size: 62.5%;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+  border-bottom: 1px solid #C3C3C3;
+}
+
+.logo {
+  display: inline-block;
+  float: left;
+  font-size: 3em;
+}
+
+.social {
+  display: inline-block;
+  float: right;
+  overflow: auto;
+  width: 200px;
+  margin-top: 40px;
+  img{
+    width: 100%;
+  }
+  .icon {
+    width: 40px;
+    display: inline-block;
+  }
+  #ot{
+    width: 50px;
+    padding-bottom: 5px;
+  }
+}
+
+
 .news{
   @include span-columns(4);
   float: left;

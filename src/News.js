@@ -8,8 +8,8 @@
 
     //var with html structure
      var whatever = `<div class='newsHead'>
-        <h3> ${ data.title } </h3>
-        <h3> ${ data.date_published} </h3>
+        <h3 class='newsTitle'> ${ data.title } </h3>
+        <h3 class='newsDate'> ${ data.date_published} </h3>
       </div>
       <div class='newsBody'>
         <p> ${ data.post } </p>
