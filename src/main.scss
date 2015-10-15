@@ -8,10 +8,11 @@ body {
   margin: 0 auto;
 }
 
+
 header {
   height: 100px;
   border-bottom: 1px solid #C3C3C3;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 .logo {
@@ -38,6 +39,18 @@ header {
     padding-bottom: 5px;
   }
 }
+
+.mainImage {
+  background-image: url(http://www.hamms-hat.com/wp-content/uploads/2014/06/landl3.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+  border: 1px solid black;
+  background-position: 0 -325px;
+
+}
+
 
 .javadiv{
   @include outer-container;
@@ -176,4 +189,9 @@ header {
   display: inline-block;
   font-size: 12px;
   margin: 20px 3px;
+}
+
+footer {
+  height: 20px;
+  border-top: 1px solid #C3C3C3;
 }

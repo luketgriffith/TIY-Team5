@@ -36,16 +36,21 @@ header {
     width: 50px;
     padding-bottom: 5px; }
 
+.mainImage {
+  background-image: url(http://www.hamms-hat.com/wp-content/uploads/2014/06/landl3.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+  border: 1px solid black;
+  background-position: 0 -325px; }
+
 .javadiv {
   max-width: 68em;
   margin-left: auto;
-<<<<<<< HEAD
   margin-right: auto;
   width: 100%;
   max-width: 100%; }
-=======
-  margin-right: auto; }
->>>>>>> master
   .javadiv::after {
     clear: both;
     content: "";
@@ -53,15 +58,10 @@ header {
   .javadiv h3 {
     padding: 10px 0;
     margin: 20px 18px;
-<<<<<<< HEAD
     margin-top: 10px;
     border-bottom: 1px solid #555555;
     color: #303030;
     font-size: 16px;
-=======
-    border-bottom: 1px solid #555555;
-    color: #303030;
->>>>>>> master
     font-weight: normal; }
 
 .news {
@@ -211,3 +211,7 @@ header {
   display: inline-block;
   font-size: 12px;
   margin: 20px 3px; }
+
+footer {
+  height: 20px;
+  border-top: 1px solid #C3C3C3; }
