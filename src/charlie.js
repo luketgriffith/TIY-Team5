@@ -4,56 +4,55 @@
   let menuURL = 'https://json-data.herokuapp.com/restaurant/menu/3';
 
 // templates
-
   let beerData = function (obj) { 
 
-    $('.menu').append(`
+    $('.beer').append(`
     <div class="menuItemTitle">${ obj.item }</div>
     <div class="menuItemPrice">${ obj.price }</div>
     <div class="menuItemDescription">${ obj.description }</div>
     `)
 
     if (obj.allergies === 1) {
-      $('.menu').append("<div class='menuSpecialIcons'>ALLERGY</div>");
+      $('.beer').append("<div class='menuSpecialIcons'><span class='entypo-attention'></span></div>");
     };
 
     if (obj.favorite === 1) {
-      $('.menu').append("<div class='menuSpecialIcons'>FAVORITE</div>");
+      $('.beer').append("<div class='menuSpecialIcons'><span class='entypo-star' title='Favorite'></span></div>");
     };
 
-    $('.menu').append("<br>");
+    $('.beer').append("<br>");
   };
 
   let entreesData = function (obj) {
-    $('.menu').append(`
+    $('.entrees').append(`
     <div class="menuItemTitle">${ obj.item }</div>
     <div class="menuItemPrice">${ obj.price }</div>
     <div class="menuItemDescription">${ obj.description }</div>
     `)
 
     if (obj.allergies === 1) {
-      $('.menu').append("<div class='menuSpecialIcons'>ALLERGY</div>");
+      $('.entrees').append("<div class='menuSpecialIcons'><span class='entypo-attention'></span></div>");
     };
 
     if (obj.favorite === 1) {
-      $('.menu').append("<div class='menuSpecialIcons'>FAVORITE</div>");
+      $('.entrees').append("<div class='menuSpecialIcons'><span class='entypo-star'></span></div>");
     };
 
-    $('.menu').append("<br>");
+    $('.entrees').append("<br>");
   };
 
   let gamesData = function (obj) {
-    $('.menu').append(`
+    $('.games').append(`
     <div class="menuItemTitle">${ obj.item }</div>
     <div class="menuItemPrice">${ obj.price }</div>
     <div class="menuItemDescription">${ obj.description }</div>
     `)
 
     if (obj.favorite === 1) {
-      $('.menu').append("<div class='menuSpecialIcons'>FAVORITE</div>");
+      $('.games').append("<div class='menuSpecialIcons'><span class='entypo-star'></span></div>");
     };
 
-    $('.menu').append("<br>");
+    $('.games').append("<br>");
   };
 
 // function to put menu items on page
