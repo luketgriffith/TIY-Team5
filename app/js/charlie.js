@@ -9,41 +9,41 @@
 
   var beerData = function beerData(obj) {
 
-    $('.beer').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescripti;on">' + obj.description + '</div>\n    ');
+    $('.menu').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescription">' + obj.description + '</div>\n    ');
 
     if (obj.allergies === 1) {
-      $('.beer').append("<div class='allergyContainer'>ALLERGY</div>");
+      $('.menu').append("<div class='menuSpecialIcons'>ALLERGY</div>");
     };
 
     if (obj.favorite === 1) {
-      $('.beer').append("<div class='favoriteContainer'>FAVORITE</div>");
+      $('.menu').append("<div class='menuSpecialIcons'>FAVORITE</div>");
     };
 
-    $('.beer').append("<br>");
+    $('.menu').append("<br>");
   };
 
   var entreesData = function entreesData(obj) {
-    $('.entrees').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescripti;on">' + obj.description + '</div>\n    ');
+    $('.menu').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescription">' + obj.description + '</div>\n    ');
 
     if (obj.allergies === 1) {
-      $('.entrees').append("<div class='allergyContainer'>ALLERGY</div>");
+      $('.menu').append("<div class='menuSpecialIcons'>ALLERGY</div>");
     };
 
     if (obj.favorite === 1) {
-      $('.entrees').append("<div class='favoriteContainer'>FAVORITE</div>");
+      $('.menu').append("<div class='menuSpecialIcons'>FAVORITE</div>");
     };
 
-    $('.entrees').append("<br>");
+    $('.menu').append("<br>");
   };
 
   var gamesData = function gamesData(obj) {
-    $('.games').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescripti;on">' + obj.description + '</div>\n    ');
+    $('.menu').append('\n    <div class="menuItemTitle">' + obj.item + '</div>\n    <div class="menuItemPrice">' + obj.price + '</div>\n    <div class="menuItemDescription">' + obj.description + '</div>\n    ');
 
     if (obj.favorite === 1) {
-      $('.games').append("<div class='favoriteContainer'>FAVORITE</div>");
+      $('.menu').append("<div class='menuSpecialIcons'>FAVORITE</div>");
     };
 
-    $('.games').append("<br>");
+    $('.menu').append("<br>");
   };
 
   // function to put menu items on page
@@ -54,15 +54,15 @@
   }).then(function (data) {
     _.each(data.Beer, function (item) {
       var beerHTML = beerData(item);
-      $('.beer').append(beerHTML);
+      $('.menu').append(beerHTML);
     });
     _.each(data.entrees, function (item) {
       var entreesHTML = entreesData(item);
-      $('.entrees').append(entreesHTML);
+      $('.menu').append(entreesHTML);
     });
     _.each(data.games, function (item) {
       var gamesHTML = gamesData(item);
-      $('.games').append(gamesHTML);
+      $('.menu').append(gamesHTML);
     });
   });
 })();

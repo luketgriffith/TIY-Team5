@@ -136,6 +136,13 @@ header {
 .news h4 {
   margin-top: 4px; }
 
+.news a {
+  text-decoration: none;
+  color: black;
+  float: right;
+  margin: 2px 8px;
+  padding: 2px; }
+
 .special {
   float: left;
   display: block;
@@ -211,6 +218,19 @@ header {
   display: inline-block;
   font-size: 12px;
   margin: 20px 3px; }
+
+.menu {
+  width: 700px; }
+  .menu .menuItemTitle {
+    font-size: 16px;
+    float: left; }
+  .menu .menuItemPrice {
+    float: right; }
+  .menu .menuItemDescription {
+    clear: both; }
+  .menu .menuSpecialIcons {
+    clear: both;
+    color: red; }
 
 footer {
   height: 20px;
