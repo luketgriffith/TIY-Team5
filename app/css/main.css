@@ -6,23 +6,128 @@ html {
 *::before {
   box-sizing: inherit; }
 
+<<<<<<< HEAD
+.javadiv {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .javadiv::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .javadiv h3 {
+    padding: 10px 0;
+    margin: 20px 18px;
+    border-bottom: 1px solid #555555;
+    color: #303030;
+    font-weight: normal; }
+=======
+body {
+  font-size: 62.5%;
+  width: 1000px;
+  margin: 0 auto; }
+
+header {
+  height: 100px;
+  border-bottom: 1px solid #C3C3C3; }
+
+.logo {
+  display: inline-block;
+  float: left;
+  font-size: 3em; }
+
+.social {
+  display: inline-block;
+  float: right;
+  overflow: auto;
+  width: 200px;
+  margin-top: 40px; }
+  .social img {
+    width: 100%; }
+  .social .icon {
+    width: 40px;
+    display: inline-block; }
+  .social #ot {
+    width: 50px;
+    padding-bottom: 5px; }
+>>>>>>> c79e03f5aa804f57655d7dfbb2dfc5482d281523
+
 .news {
   float: left;
-  max-width: 25%;
-  margin: 2%;
-  background-color: #EBEBEB; }
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: left;
+  background-color: #EBEBEB;
+  height: 325px; }
+  .news:last-child {
+    margin-right: 0; }
+  .news .newsHead {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 3.5%; }
+    .news .newsHead::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .news .newsTitle {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    float: left;
+    font-size: 14px;
+    border-bottom: none;
+    margin: 0 2px;
+    font-weight: bold;
+    font-style: italic; }
+    .news .newsTitle:last-child {
+      margin-right: 0; }
+  .news .newsDate {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    float: right;
+    font-size: 14px;
+    border-bottom: none;
+    margin: 0 5px;
+    font-weight: bold;
+    font-style: italic; }
+    .news .newsDate:last-child {
+      margin-right: 0; }
 
 .news p {
+  display: block;
+  display: -webkit-box;
+  max-width: 95%;
+  height: 109.2px;
+  margin: 0 2.5%;
   font-size: 12px;
-  font-weight: normal;
-  text-overflow: ellipsis;
-  background-color: #EBEBEB; }
+  line-height: 1.4;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.news a {
+  text-decoration: none;
+  color: black;
+  float: right;
+  margin: 2px 8px;
+  padding: 2px; }
 
 .special {
   float: left;
-  max-width: 25%;
-  margin: 2%;
-  background-color: #EBEBEB; }
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: left;
+  background-color: #EBEBEB;
+  height: 325px; }
+  .special:last-child {
+    margin-right: 0; }
 
 .specialImg {
   background-image: url("http://www.truefoodkitchen.com/wp-content/uploads/2013/03/mg_9050.jpg");
@@ -32,8 +137,39 @@ html {
   width: 90%;
   margin: 0 5%; }
 
+.special p {
+  padding: 5px;
+  font-size: 12px; }
+
+.specialTitle {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  float: left;
+  font-weight: bold; }
+  .specialTitle:last-child {
+    margin-right: 0; }
+
+.specialPrice {
+  float: right;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .specialPrice:last-child {
+    margin-right: 0; }
+
+.specialDesc {
+  clear: both; }
+
 .location {
   float: left;
-  max-width: 25%;
-  margin: 2%;
-  background-color: #EBEBEB; }
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: left;
+  background-color: #EBEBEB;
+  height: 325px; }
+  .location:last-child {
+    margin-right: 0; }
