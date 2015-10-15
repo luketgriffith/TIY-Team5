@@ -286,8 +286,10 @@ header {
 
 
 /*************************Slider Stuff************************/
+
 .buttons{
   height: 50px;
+  float: left;    
   span{
     line-height: 50px;
     font-size: 24px;
@@ -418,6 +420,7 @@ header {
 footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;
+  clear: both;
   p {
     padding-bottom: 20px;
   }
