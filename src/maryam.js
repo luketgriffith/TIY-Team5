@@ -43,8 +43,10 @@ para.on('click', function(){
    $('.ourStoryTab').addClass('shown');
    $('#menuTitle').removeClass('selected');
    $('#reservationsTitle').removeClass('selected');
+   $('#commentsTitle').removeClass('selected');
    $('.menu').removeClass('shown');
    $('.reservationTab').removeClass('shown');
+   $('.comments').removeClass('shown');
 });
 
 var para2 = $('#menuTitle');
@@ -53,8 +55,10 @@ para2.on('click', function(){
   $('.menu').addClass('shown');
   $('#storyTitle').removeClass('selected');
   $('#reservationsTitle').removeClass('selected');
+  $('#commentsTitle').removeClass('selected');
    $('.ourStoryTab').removeClass('shown');
    $('.reservationTab').removeClass('shown');
+   $('.comments').removeClass('shown');
 });
 
 var para3 = $('#reservationsTitle');
@@ -63,10 +67,24 @@ para3.on('click', function(){
   $('.reservationTab').addClass('shown');
   $('#storyTitle').removeClass('selected');
   $('#menuTitle').removeClass('selected');
+  $('#commentsTitle').removeClass('selected');
    $('.menu').removeClass('shown');
    $('.ourStoryTab').removeClass('shown');
+   $('.comments').removeClass('shown');
 });
-console.log('meow')
+var para4= $('#commentsTitle');
+para4.on('click', function(){
+  $('.comments').addClass('shown');
+  $('#commentsTitle').addClass('selected');
+  $('#storyTitle').removeClass('selected');
+  $('#reservationsTitle').removeClass('selected');
+  $('#menuTitle').removeClass('selected');
+  $('.ourStoryTab').removeClass('shown');
+  $('.reservationTab').removeClass('shown');
+   $('.menu').removeClass('shown');
+ 
+})
+
 })();
 
 
