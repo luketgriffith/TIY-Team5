@@ -50,21 +50,9 @@ header {
 
 
 .javadiv {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-=======
-.javadiv {
-  max-width: 68em;
-  margin-left: auto;
-<<<<<<< HEAD
   margin-right: auto;
   width: 100%;
   max-width: 100%; }
-=======
-  margin-right: auto; }
->>>>>>> master
->>>>>>> master
   .javadiv::after {
     clear: both;
     content: "";
@@ -72,20 +60,10 @@ header {
   .javadiv h3 {
     padding: 10px 0;
     margin: 20px 18px;
-<<<<<<< HEAD
-    border-bottom: 1px solid #555555;
-    color: #303030;
-=======
-<<<<<<< HEAD
     margin-top: 10px;
     border-bottom: 1px solid #555555;
     color: #303030;
     font-size: 16px;
-=======
-    border-bottom: 1px solid #555555;
-    color: #303030;
->>>>>>> master
->>>>>>> master
     font-weight: normal; }
 
 .news {
@@ -219,13 +197,7 @@ header {
   .location:last-child {
     margin-right: 0; }
 
-<<<<<<< HEAD
 
-footer {
-  height: 20px;
-  border-top: 1px solid #C3C3C3;
-}
-=======
 .location p {
   display: block;
   width: 100%;
@@ -242,4 +214,9 @@ footer {
   display: inline-block;
   font-size: 12px;
   margin: 20px 3px; }
->>>>>>> master
+
+
+footer {
+  height: 20px;
+  border-top: 1px solid #C3C3C3;
+}
