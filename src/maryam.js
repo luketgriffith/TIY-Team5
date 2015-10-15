@@ -1,3 +1,4 @@
+
  //for flickr pics on right hand side 
 function foodPics(setId) {
   
@@ -31,11 +32,6 @@ function foodPics(setId) {
 //   .filter(location.hash).click();
   
 // });
-
-
-
-
-
 
 
 
