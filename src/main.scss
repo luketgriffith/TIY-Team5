@@ -2,7 +2,6 @@
 @import 'neat/neat';
 
 
-
 body {
   font-size: 62.5%;
   width: 1000px;
@@ -39,6 +38,7 @@ header {
     padding-bottom: 5px;
   }
 }
+
 .javadiv{
   @include outer-container;
   width: 100%;
@@ -55,6 +55,7 @@ header {
   }
 }
    
+
 
 .news{
 
@@ -157,7 +158,7 @@ header {
   border: 1px solid #555555;
  
 
-}
+} 
 .location p{
   display: block;
   width: 100%;

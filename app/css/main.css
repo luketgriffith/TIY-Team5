@@ -39,9 +39,13 @@ header {
 .javadiv {
   max-width: 68em;
   margin-left: auto;
+<<<<<<< HEAD
   margin-right: auto;
   width: 100%;
   max-width: 100%; }
+=======
+  margin-right: auto; }
+>>>>>>> master
   .javadiv::after {
     clear: both;
     content: "";
@@ -49,10 +53,15 @@ header {
   .javadiv h3 {
     padding: 10px 0;
     margin: 20px 18px;
+<<<<<<< HEAD
     margin-top: 10px;
     border-bottom: 1px solid #555555;
     color: #303030;
     font-size: 16px;
+=======
+    border-bottom: 1px solid #555555;
+    color: #303030;
+>>>>>>> master
     font-weight: normal; }
 
 .news {
