@@ -11,8 +11,9 @@
         if(z.id === y){
           
           var template= `<p class= 'specialTitle'>${z.item}</p>
-          <p class='specialDesc'>${z.description}</p>
+         
           <p class='specialPrice'>$${z.price}</p>
+           <p class='specialDesc'>${z.description}</p>
           `
           $('.special').append(template);
         }
