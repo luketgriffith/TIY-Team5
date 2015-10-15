@@ -1,16 +1,7 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-.javadiv{
-  @include outer-container;
-  h3{
-    padding: 10px 0;
-    margin: 20px 18px;
-    border-bottom: 1px solid #555555;
-    color: #303030;
-    font-weight: normal;
-  }
-}
+
 
 
 body {
@@ -49,7 +40,16 @@ header {
   }
 }
 
-
+.javadiv{
+  @include outer-container;
+  h3{
+    padding: 10px 0;
+    margin: 20px 18px;
+    border-bottom: 1px solid #555555;
+    color: #303030;
+    font-weight: normal;
+  }
+}
 .news{
   @include span-columns(4);
   float: left;
