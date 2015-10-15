@@ -13,7 +13,8 @@ body {
 
 header {
   height: 100px;
-  border-bottom: 1px solid #C3C3C3; }
+  border-bottom: 1px solid #C3C3C3;
+  overflow: hidden; }
 
 .logo {
   display: inline-block;
@@ -35,10 +36,21 @@ header {
     width: 50px;
     padding-bottom: 5px; }
 
+.mainImage {
+  background-image: url(http://www.hamms-hat.com/wp-content/uploads/2014/06/landl3.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+  border: 1px solid black;
+  background-position: 0 -325px; }
+
 .javadiv {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%; }
   .javadiv::after {
     clear: both;
     content: "";
@@ -46,8 +58,10 @@ header {
   .javadiv h3 {
     padding: 10px 0;
     margin: 20px 18px;
+    margin-top: 10px;
     border-bottom: 1px solid #555555;
     color: #303030;
+    font-size: 16px;
     font-weight: normal; }
 
 .news {
@@ -57,7 +71,8 @@ header {
   width: 31.76157%;
   float: left;
   background-color: #EBEBEB;
-  height: 325px; }
+  height: 300px;
+  border: 1px solid #555555; }
   .news:last-child {
     margin-right: 0; }
   .news .newsHead {
@@ -73,7 +88,7 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
+    width: 74.41059%;
     float: left;
     font-size: 14px;
     border-bottom: none;
@@ -90,9 +105,10 @@ header {
     float: right;
     font-size: 14px;
     border-bottom: none;
-    margin: 0 5px;
+    margin: 0;
     font-weight: bold;
-    font-style: italic; }
+    font-style: italic;
+    padding-left: 10px; }
     .news .newsDate:last-child {
       margin-right: 0; }
 
@@ -100,14 +116,25 @@ header {
   display: block;
   display: -webkit-box;
   max-width: 95%;
-  height: 109.2px;
+  height: 146.2px;
   margin: 0 2.5%;
   font-size: 12px;
   line-height: 1.4;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+.news a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+  float: right;
+  margin: 2px 8px;
+  padding: 2px; }
+
+.news h4 {
+  margin-top: 4px; }
 
 .news a {
   text-decoration: none;
@@ -123,7 +150,8 @@ header {
   width: 31.76157%;
   float: left;
   background-color: #EBEBEB;
-  height: 325px; }
+  height: 300px;
+  border: 1px solid #555555; }
   .special:last-child {
     margin-right: 0; }
 
@@ -137,13 +165,14 @@ header {
 
 .special p {
   padding: 5px;
-  font-size: 12px; }
+  font-size: 12px;
+  margin: 20px 5px; }
 
 .specialTitle {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%;
+  width: 82.94039%;
   float: left;
   font-weight: bold; }
   .specialTitle:last-child {
@@ -154,7 +183,7 @@ header {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 6.17215%; }
   .specialPrice:last-child {
     margin-right: 0; }
 
@@ -168,9 +197,27 @@ header {
   width: 31.76157%;
   float: left;
   background-color: #EBEBEB;
-  height: 325px; }
+  height: 300px;
+  border: 1px solid #555555; }
   .location:last-child {
     margin-right: 0; }
+
+.location p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 25px; }
+
+.location ul {
+  padding: 0;
+  padding-left: 29px; }
+
+.location li {
+  display: inline-block;
+  font-size: 12px;
+  margin: 20px 3px; }
 
 .menu {
   width: 700px; }
@@ -184,3 +231,7 @@ header {
   .menu .menuSpecialIcons {
     clear: both;
     color: red; }
+
+footer {
+  height: 20px;
+  border-top: 1px solid #C3C3C3; }
