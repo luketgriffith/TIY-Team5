@@ -5,3 +5,35 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; }
+
+.news {
+  float: left;
+  max-width: 25%;
+  margin: 2%;
+  background-color: #EBEBEB; }
+
+.news p {
+  font-size: 12px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  background-color: #EBEBEB; }
+
+.special {
+  float: left;
+  max-width: 25%;
+  margin: 2%;
+  background-color: #EBEBEB; }
+
+.specialImg {
+  background-image: url("http://www.truefoodkitchen.com/wp-content/uploads/2013/03/mg_9050.jpg");
+  background-size: cover;
+  background-position: -30px;
+  height: 100px;
+  width: 90%;
+  margin: 0 5%; }
+
+.location {
+  float: left;
+  max-width: 25%;
+  margin: 2%;
+  background-color: #EBEBEB; }
