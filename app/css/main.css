@@ -95,7 +95,8 @@ header {
   float: left;
   background-color: #EBEBEB;
   height: 300px;
-  border: 1px solid #555555; }
+  border: 1px solid #555555;
+  margin-bottom: 30px; }
   .news:last-child {
     margin-right: 0; }
   .news .newsHead {
@@ -174,7 +175,8 @@ header {
   float: left;
   background-color: #EBEBEB;
   height: 300px;
-  border: 1px solid #555555; }
+  border: 1px solid #555555;
+  margin-bottom: 30px; }
   .special:last-child {
     margin-right: 0; }
 
@@ -221,7 +223,8 @@ header {
   float: left;
   background-color: #EBEBEB;
   height: 300px;
-  border: 1px solid #555555; }
+  border: 1px solid #555555;
+  margin-bottom: 30px; }
   .location:last-child {
     margin-right: 0; }
 
@@ -254,6 +257,94 @@ header {
   .menu .menuSpecialIcons {
     clear: both;
     color: red; }
+
+/*************************Slider Stuff************************/
+.buttons {
+  height: 50px; }
+  .buttons span {
+    line-height: 50px;
+    font-size: 24px;
+    margin: 20px 30px;
+    padding: 10px;
+    background-color: #F7F7F7; }
+
+.ourStoryTab {
+  float: left;
+  max-width: 0px;
+  overflow: scroll;
+  text-overflow: hidden;
+  transition: all 1s ease;
+  background-color: #F7F7F7; }
+  .ourStoryTab img {
+    float: left;
+    max-width: 45%;
+    height: 200px;
+    margin: 25px 2.5%; }
+  .ourStoryTab p {
+    margin: 10px;
+    background-color: #F7F7F7; }
+
+.menu {
+  float: left;
+  max-width: 0px;
+  overflow: scroll;
+  text-overflow: hidden;
+  transition: all 1s ease;
+  background-color: #F7F7F7; }
+  .menu .menuItemTitle {
+    margin: 10px; }
+  .menu .menuItemPrice {
+    font-size: 14px;
+    margin: 10px; }
+  .menu .menuItemDescription {
+    font-size: 12px;
+    margin: 10px; }
+  .menu .menuSpecialIcons {
+    margin: 10px; }
+
+.reservationTab {
+  font-size: 14px;
+  float: left;
+  max-width: 0px;
+  overflow: hidden;
+  text-overflow: hidden;
+  transition: all 1s ease;
+  background-color: #F7F7F7; }
+  .reservationTab form {
+    width: 660px; }
+    .reservationTab form p {
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 5%; }
+    .reservationTab form input {
+      width: 90%;
+      margin-top: 5px; }
+    .reservationTab form select {
+      margin-top: 5px;
+      margin-left: 5%;
+      width: 45%; }
+  .reservationTab button {
+    height: 40px;
+    width: 20%;
+    background-color: gray;
+    color: white;
+    margin-top: 20px;
+    margin-left: 5%;
+    border-radius: 15em; }
+
+.shown {
+  float: left;
+  max-width: 660px;
+  border: 1px solid black;
+  height: 400px;
+  background-color: #F7F7F7; }
+
+.selected {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid #F7F7F7;
+  overflow: hidden; }
 
 footer {
   height: 20px;
