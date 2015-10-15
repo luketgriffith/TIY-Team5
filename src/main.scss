@@ -1,6 +1,7 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
+
 body {
   font-size: 62.5%;
   width: 1000px;
@@ -38,6 +39,18 @@ header {
   }
 }
 
+
+.javadiv{
+  @include outer-container;
+  h3{
+    padding: 10px 0;
+    margin: 20px 18px;
+    border-bottom: 1px solid #555555;
+    color: #303030;
+    font-weight: normal;
+  }
+}
+
 .mainImage {
   background-image: url(http://www.hamms-hat.com/wp-content/uploads/2014/06/landl3.jpg);
   background-size: cover;
@@ -66,6 +79,7 @@ header {
   }
 }
    
+
 
 
 .news{
