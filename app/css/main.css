@@ -15,7 +15,8 @@ body {
   font-size: 62.5%;
   width: 1000px;
   margin: 0 auto;
-  background-color: #fdfcfc; }
+  background-color: #fdfcfc;
+  font-family: 'open sans', sans-serif; }
 
 header {
   height: 100px;
@@ -265,11 +266,16 @@ header {
     font-size: 24px;
     margin: 20px 15px;
     padding: 10px;
-    background-color: #F7F7F7; }
+    background-color: #F7F7F7;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em; }
+    .buttons span:hover {
+      cursor: pointer; }
 
 .ourStoryTab {
   float: left;
   max-width: 0px;
+  max-height: 750px;
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
@@ -377,13 +383,17 @@ header {
       margin-left: 5%;
       width: 45%; }
   .reservationTab button {
+    font-size: 1.1em;
     height: 40px;
     width: 20%;
-    background-color: gray;
+    background-color: #4C4C4C;
     color: white;
     margin-top: 20px;
     margin-left: 5%;
-    border-radius: 15em; }
+    border-radius: 15em;
+    border: 1px solid black; }
+    .reservationTab button:hover {
+      background-color: #DD343E; }
 
 .comments {
   float: left;
@@ -395,13 +405,17 @@ header {
   .comments textarea {
     margin: 50px; }
   .comments button {
+    font-size: 2em;
     height: 40px;
-    width: 70px;
-    background-color: gray;
+    width: 20%;
+    background-color: #4C4C4C;
     color: white;
-    margin-left: 50px;
-    font-size: 14px;
-    border-radius: 20em; }
+    margin-top: 20px;
+    margin-left: 5%;
+    border-radius: 15em;
+    border: 1px solid black; }
+    .comments button:hover {
+      background-color: #DD343E; }
 
 .shown {
   float: left;
