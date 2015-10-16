@@ -52,21 +52,6 @@ header {
     width: 50px;
     padding-bottom: 5px; }
 
-.javadiv {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .javadiv::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .javadiv h3 {
-    padding: 10px 0;
-    margin: 20px 18px;
-    border-bottom: 1px solid #ececec;
-    color: #303030;
-    font-weight: normal; }
-
 .mainImage {
   background-image: url(http://www.hamms-hat.com/wp-content/uploads/2014/06/landl3.jpg);
   background-size: cover;
@@ -87,13 +72,13 @@ header {
     content: "";
     display: table; }
   .javadiv h3 {
-    padding: 10px 0;
+    padding: 5px 0;
     margin: 20px 18px;
     margin-top: 10px;
     border-bottom: 1px solid #4C4C4C;
     color: #303030;
-    font-size: 16px;
-    font-weight: normal; }
+    font-family: 'Amatic SC' , cursive;
+    font-size: 3em; }
 
 .news {
   float: left;
@@ -194,12 +179,14 @@ header {
   background-position: -30px;
   height: 100px;
   width: 90%;
-  margin: 0 5%; }
+  margin: 0 5%;
+  border: 1px solid #4C4C4C;
+  border-radius: 2px; }
 
 .special p {
   padding: 5px;
   font-size: 12px;
-  margin: 20px 5px; }
+  margin: 10px 5px; }
 
 .specialTitle {
   float: left;
@@ -427,8 +414,7 @@ header {
   border-right: 1px solid black;
   border-left: 1px solid black;
   border-bottom: 5px solid #F7F7F7;
-  overflow: hidden;
-  z-index: 100; }
+  overflow: hidden; }
 
 .foodPhotos {
   float: right;
@@ -438,12 +424,10 @@ header {
     font-size: 4em;
     margin: 10px auto;
     text-align: center; }
-  .foodPhotos .flickrImg {
+  .foodPhotos img {
     float: right;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: #4C4C4C;
-    padding: 5px;
+    border: 1px solid #4C4C4C;
+    border-radius: 2px;
     margin-bottom: 20px; }
 
 .message {
@@ -464,6 +448,7 @@ header {
 footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;
+  font-size: 2em;
   clear: both;
   font-family: 'Amatic SC', cursive; }
   footer p {
