@@ -314,11 +314,13 @@ header {
     margin: 25px 2.5%; }
   .ourStoryTab p {
     margin: 10px;
-    background-color: #F7F7F7; }
+    background-color: #F7F7F7;
+    font-size: 14px; }
 
 .menu {
   float: left;
   max-width: 0px;
+  max-height: 750px;
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
@@ -385,7 +387,7 @@ header {
   float: left;
   max-width: 660px;
   border: 1px solid black;
-  height: 400px;
+  height: 750px;
   background-color: #F7F7F7; }
 
 .selected {
@@ -410,6 +412,20 @@ header {
     background-color: #4C4C4C;
     padding: 5px;
     margin-bottom: 20px; }
+
+.message {
+  display: none;
+  font-size: 24px;
+  transition: all 1s ease; }
+
+.appear {
+  display: block;
+  height: 90px;
+  width: 300px;
+  border: 1px solid black;
+  margin-left: 150px;
+  text-align: center;
+  transition: all 1s ease; }
 
 footer {
   height: 20px;
