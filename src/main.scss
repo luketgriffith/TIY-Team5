@@ -440,6 +440,9 @@ header {
     &:hover {
       background-color: $red;
     }
+    &:focus {
+      outline: 0;
+    }
   }
 }
 .comments{
@@ -466,6 +469,9 @@ header {
     &:hover {
       background-color: $red;
     }
+    &:focus {
+      outline: 0;
+    }
   }
 
  } 
@@ -482,11 +488,8 @@ header {
   border-left: 1px solid black;
   border-bottom: 5px solid #F7F7F7;
   overflow: hidden;
-
-  
 }     
 
-}
 
 
 .foodPhotos{
@@ -529,6 +532,7 @@ footer {
   border-top: 1px solid #C3C3C3;
   clear: both;
   font-family: 'Amatic SC', cursive;
+  font-size: 2.5em;
   p {
     padding-bottom: 20px;
   }

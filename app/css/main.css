@@ -392,6 +392,8 @@ header {
     border: 1px solid black; }
     .reservationTab button:hover {
       background-color: #DD343E; }
+    .reservationTab button:focus {
+      outline: 0; }
 
 .comments {
   float: left;
@@ -414,6 +416,8 @@ header {
     border: 1px solid black; }
     .comments button:hover {
       background-color: #DD343E; }
+    .comments button:focus {
+      outline: 0; }
 
 .shown {
   float: left;
@@ -427,8 +431,7 @@ header {
   border-right: 1px solid black;
   border-left: 1px solid black;
   border-bottom: 5px solid #F7F7F7;
-  overflow: hidden;
-  z-index: 100; }
+  overflow: hidden; }
 
 .foodPhotos {
   float: right;
@@ -465,6 +468,7 @@ footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;
   clear: both;
-  font-family: 'Amatic SC', cursive; }
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5em; }
   footer p {
     padding-bottom: 20px; }
