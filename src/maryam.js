@@ -81,7 +81,7 @@ para4.on('click', function(){
   $('#menuTitle').removeClass('selected');
   $('.ourStoryTab').removeClass('shown');
   $('.reservationTab').removeClass('shown');
-   $('.menu').removeClass('shown');
+  $('.menu').removeClass('shown');
  
 }) 
 

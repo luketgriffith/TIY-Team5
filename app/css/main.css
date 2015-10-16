@@ -287,8 +287,7 @@ header {
 
 /*************************Slider Stuff************************/
 .buttons {
-  height: 50px;
-  float: left; }
+  height: 50px; }
   .buttons span {
     line-height: 50px;
     font-size: 24px;
