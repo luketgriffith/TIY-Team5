@@ -2,6 +2,13 @@
 @import 'neat/neat';
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
+$red: #DD343E;
+$egg: #F5F5ED;
+$black: #4C4C4C;
+$white:#fdfcfc;
+$grey: #ececec;
+
+
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -11,6 +18,7 @@ body {
   font-size: 62.5%;
   width: 1000px;
   margin: 0 auto;
+  background-color: $white;
 }
 
 header {
@@ -62,7 +70,7 @@ header {
   h3{
     padding: 10px 0;
     margin: 20px 18px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid $grey;
     color: #303030;
     font-weight: normal;
   }
@@ -89,7 +97,7 @@ header {
     padding: 10px 0;
     margin: 20px 18px;
     margin-top: 10px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid $black;
     color: #303030;
     font-size: 16px;
     font-weight: normal;
@@ -103,9 +111,9 @@ header {
 
   @include span-columns(4);
   float: left;
-  background-color: #EBEBEB;
+  background-color: $white;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid $black;
   margin-bottom: 30px;
  
  
@@ -171,9 +179,9 @@ header {
 .special{
   @include span-columns(4);
   float: left;
-  background-color: #EBEBEB;
+  background-color: $white;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid $black;
   margin-bottom: 30px;
  
  
@@ -206,9 +214,9 @@ header {
 .location{
   @include span-columns(4);
   float: left;
-  background-color: #EBEBEB;
+  background-color: $white;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid $black;
   margin-bottom: 30px;
  
 
@@ -286,6 +294,12 @@ header {
 
 
 /*************************Slider Stuff************************/
+
+.slider{
+  width: 70%;
+  float: left;
+}
+
 
 .buttons{
   height: 50px;
@@ -413,12 +427,26 @@ header {
   border-bottom: 1px solid #F7F7F7;
   overflow: hidden;
 }
-.foodPhotos{
-  float: right;   
 
-}
-.flickrImg{
-  float: right;
+.foodPhotos{
+  float: right; 
+  width: 25%; 
+
+  h2 {
+    font-family:  'Amatic SC', cursive;  
+    font-size: 4em;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .flickrImg{
+    float: right;
+    border: 1px solid black; 
+    border-radius: 3px;
+    background-color: $black;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
 }
 .message{
   display: none;
