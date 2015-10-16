@@ -291,68 +291,83 @@ header {
 .menu{
   float: left;
   max-width: 0px;
-  width: 700px;
+  width: 100%;
   max-height: 750px;  
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
   background-color: #F7F7F7;
 
-  .menuItemTitle{
-    margin: 10px;
-    font-size: 16px;
-    float: left;
+  hr {
+    border: 1px solid #DADADA;
+    width: 98%;
   }
-  .menuItemPrice{
-    font-size: 14px;
-    margin: 10px;
-    float: right;
-  }
-  .menuItemDescription{
-    font-size: 12px;
-    font-style: none;
-    margin: 10px;
-    float: left;
-    clear:both;
-    width: 500px;
-  }
-  .menuSpecialIcons{
-    margin: 10px;
-    float: right;
-    clear:both;
 
+  .menuLeft {
+    width: 90%;
+    float: left;
 
-    .entypo-attention {
+    .menuItemTitle{
+      margin-top: 10px;
       font-size: 16px;
-      color: red;
-      display: inline-block;
+      font-style: normal;
+      font-weight: bold;
+      float: left;
+    }
+    .menuItemPrice{
+      font-size: 14px;
+      margin: 10px;
       float: right;
     }
+    .menuItemDescription{
+      font-size: 12px;
+      font-style: normal;
+      margin-left: 10px;
+      float: left;
+      clear:both;
+      width: 500px;
+    }
+  }
 
-    .entypo-attention:hover:after {
-      background: #E7E7E7;
-      color: #545454;
-      border-radius: 2px;
-      border: 1px solid #D1D1D1;
-      content: "Allergy info";
-      padding: 5px 200px 5px 15px;
+  .menuRight {
+    float: right;
+    margin: 10px 5px 0 0;
+
+    .menuSpecialIcons{
+      font-style: normal; 
       
-    }
 
-    .entypo-star {
-      font-size: 16px;
-      color: #FFCD00;
-      display: inline-block;
-      float: right;
-    }
+      .entypo-attention {
+        font-size: 16px;
+        color: red;
+        display: inline-block;
+        float: right;
+      }
 
-    .entypo-star:hover:after {
-      background: #E7E7E7;
-      color: #545454;
-      border-radius: 2px;
-      border: 1px solid #D1D1D1;
-      content: "Favorite";
-      padding: 5px 200px 5px 15px;
+      // .entypo-attention:hover:after {
+      //   background: #E7E7E7;
+      //   color: #545454;
+      //   border-radius: 2px;
+      //   border: 1px solid #D1D1D1;
+      //   content: "Allergy info";
+      //   padding: 5px 200px 5px 15px;
+      // }
+
+      .entypo-star {
+        font-size: 16px;
+        color: #FFCD00;
+        display: inline-block;
+        float: right;
+      }
+
+      // .entypo-star:hover:after {
+      //   background: #E7E7E7;
+      //   color: #545454;
+      //   border-radius: 2px;
+      //   border: 1px solid #D1D1D1;
+      //   content: "Favorite";
+      //   padding: 5px 200px 5px 15px;
+      // }
     }
   }
 
@@ -361,6 +376,7 @@ header {
     font-style: italic;
     padding-left: 10px;
     padding-top: 10px;
+    width: 100%;
     float: left;
   }
 
@@ -369,6 +385,7 @@ header {
     font-style: italic;
     padding-left: 10px;
     padding-top: 10px;
+    width: 100%;
     float: left;
   }
 
@@ -377,6 +394,7 @@ header {
     font-style: italic;
     padding-left: 10px;
     padding-top: 10px;
+    width: 100%;
     float: left;
   }
 

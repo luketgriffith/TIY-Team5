@@ -293,72 +293,70 @@ header {
 .menu {
   float: left;
   max-width: 0px;
-  width: 700px;
+  width: 100%;
   max-height: 750px;
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
   background-color: #F7F7F7; }
-  .menu .menuItemTitle {
-    margin: 10px;
-    font-size: 16px;
+  .menu hr {
+    border: 1px solid #DADADA;
+    width: 98%; }
+  .menu .menuLeft {
+    width: 90%;
     float: left; }
-  .menu .menuItemPrice {
-    font-size: 14px;
-    margin: 10px;
-    float: right; }
-  .menu .menuItemDescription {
-    font-size: 12px;
-    font-style: none;
-    margin: 10px;
-    float: left;
-    clear: both;
-    width: 500px; }
-  .menu .menuSpecialIcons {
-    margin: 10px;
+    .menu .menuLeft .menuItemTitle {
+      margin-top: 10px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: bold;
+      float: left; }
+    .menu .menuLeft .menuItemPrice {
+      font-size: 14px;
+      margin: 10px;
+      float: right; }
+    .menu .menuLeft .menuItemDescription {
+      font-size: 12px;
+      font-style: normal;
+      margin-left: 10px;
+      float: left;
+      clear: both;
+      width: 500px; }
+  .menu .menuRight {
     float: right;
-    clear: both; }
-    .menu .menuSpecialIcons .entypo-attention {
-      font-size: 16px;
-      color: red;
-      display: inline-block;
-      float: right; }
-    .menu .menuSpecialIcons .entypo-attention:hover:after {
-      background: #E7E7E7;
-      color: #545454;
-      border-radius: 2px;
-      border: 1px solid #D1D1D1;
-      content: "Allergy info";
-      padding: 5px 200px 5px 15px; }
-    .menu .menuSpecialIcons .entypo-star {
-      font-size: 16px;
-      color: #FFCD00;
-      display: inline-block;
-      float: right; }
-    .menu .menuSpecialIcons .entypo-star:hover:after {
-      background: #E7E7E7;
-      color: #545454;
-      border-radius: 2px;
-      border: 1px solid #D1D1D1;
-      content: "Favorite";
-      padding: 5px 200px 5px 15px; }
+    margin: 10px 5px 0 0; }
+    .menu .menuRight .menuSpecialIcons {
+      font-style: normal; }
+      .menu .menuRight .menuSpecialIcons .entypo-attention {
+        font-size: 16px;
+        color: red;
+        display: inline-block;
+        float: right; }
+      .menu .menuRight .menuSpecialIcons .entypo-star {
+        font-size: 16px;
+        color: #FFCD00;
+        display: inline-block;
+        float: right; }
   .menu .beer {
     font-size: 18px;
     font-style: italic;
     padding-left: 10px;
     padding-top: 10px;
+    width: 100%;
     float: left; }
   .menu .entrees {
     font-size: 18px;
     font-style: italic;
     padding-left: 10px;
     padding-top: 10px;
+    width: 100%;
     float: left; }
   .menu .games {
     font-size: 18px;
     font-style: italic;
     padding-left: 10px;
     padding-top: 10px;
+    width: 100%;
     float: left; }
 
 .reservationTab {
