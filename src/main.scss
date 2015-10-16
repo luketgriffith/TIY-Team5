@@ -19,6 +19,7 @@ body {
   width: 1000px;
   margin: 0 auto;
   background-color: $white;
+  font-family: 'open sans', sans-serif;
 }
 
 header {
@@ -251,19 +252,23 @@ header {
 
 .buttons{
   height: 50px;
-  // float: left;    
   span{
     line-height: 50px;
     font-size: 24px;
     margin: 20px 15px;
     padding: 10px;
     background-color: #F7F7F7;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+  &:hover {
+    cursor: pointer;
+  } 
   }
 }
 .ourStoryTab{
   float: left;
   max-width: 0px;
-
+  max-height: 750px;
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
@@ -403,14 +408,20 @@ header {
       margin-left: 5%;
       width: 45%
     }
-  } button{
+  }
+   button{
+    font-size: 1.1em;
     height: 40px;
     width: 20%;
-    background-color: gray;
+    background-color: $black;
     color: white;
     margin-top: 20px;
     margin-left: 5%;
     border-radius: 15em;
+    border: 1px solid black;
+    &:hover {
+      background-color: $red;
+    }
   }
 }
 .comments{
@@ -423,15 +434,22 @@ header {
   background-color: #F7F7F7;
   textarea{
     margin: 50px;
-  }button{
-    height: 40px;
-    width: 70px;
-    background-color: gray;
-    color: white;
-    margin-left: 50px;
-    font-size: 14px;
-    border-radius: 20em;
   }
+  button {
+    font-size: 2em;
+    height: 40px;
+    width: 20%;
+    background-color: $black;
+    color: white;
+    margin-top: 20px;
+    margin-left: 5%;
+    border-radius: 15em;
+    border: 1px solid black;
+    &:hover {
+      background-color: $red;
+    }
+  }
+
  } 
 .shown{
   float: left;
