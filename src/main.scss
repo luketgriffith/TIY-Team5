@@ -297,6 +297,7 @@ header {
   text-overflow: hidden;
   transition: all 1s ease;
   background-color: #F7F7F7;
+  position: relative;
 
   hr {
     border: 1px solid #DADADA;
@@ -336,22 +337,33 @@ header {
     .menuSpecialIcons{
       font-style: normal; 
       
-
       .entypo-attention {
         font-size: 16px;
         color: red;
-        display: inline-block;
-        float: right;
       }
 
-      // .entypo-attention:hover:after {
-      //   background: #E7E7E7;
-      //   color: #545454;
-      //   border-radius: 2px;
-      //   border: 1px solid #D1D1D1;
-      //   content: "Allergy info";
-      //   padding: 5px 200px 5px 15px;
-      // }
+      .hoverAttn {
+        width: 230px;
+        height: 100px;
+        background-color: #E7E7E7;
+        border: 1px solid #D1D1D1;
+        border-radius: 1px;
+        color: #3D3D3D;
+        left: 64%;
+        position: absolute;
+        font-size: 12px;
+        padding: 4px 0 4px 4px;
+        opacity: 0;
+
+        p {
+          font-size: 10px;
+          margin-top: 0;
+        }
+      }
+
+      .entypo-attention:hover + .hoverAttn {
+        opacity: 1;
+      }
 
       .entypo-star {
         font-size: 16px;
@@ -360,14 +372,28 @@ header {
         float: right;
       }
 
-      // .entypo-star:hover:after {
-      //   background: #E7E7E7;
-      //   color: #545454;
-      //   border-radius: 2px;
-      //   border: 1px solid #D1D1D1;
-      //   content: "Favorite";
-      //   padding: 5px 200px 5px 15px;
-      // }
+      .hoverFav {
+        width: 230px;
+        height: 100px;
+        background-color: #E7E7E7;
+        border: 1px solid #D1D1D1;
+        border-radius: 1px;
+        color: #3D3D3D;
+        left: 64%;
+        position: absolute;
+        font-size: 12px;
+        padding: 4px 0 4px 4px;
+        opacity: 0;
+
+        p {
+          font-size: 10px;
+          margin-top: 0;
+        }
+      }
+
+      .entypo-star:hover + .hoverFav {
+        opacity: 1;
+      }
     }
   }
 
@@ -397,9 +423,8 @@ header {
     width: 100%;
     float: left;
   }
-
-
 }
+
 .reservationTab{
   font-size: 14px;
   float: left;
@@ -486,7 +511,7 @@ header {
   
 }     
 
-}
+
 
 
 .foodPhotos{
