@@ -22,4 +22,17 @@
       
 });
      });
-     
+
+var menu=[{title: $('#storyTitle'), tab: $('.ourStoryTab') }, {title:$('#menuTitle'), tab: $('.menu')}, {title:$('#reservationsTitle'), tab: $('.reservationTab')}, {title: $('#commentsTitle'), tab:$('.comments')}]
+
+ _.each(menu, function(x){
+      x.title.on('click', function(){
+        
+        _.each(menu, function(y){
+          y.title.removeClass('selected');
+          y.tab.removeClass('shown')
+        });
+        x.title.addClass('selected');
+        x.tab.addClass('shown');
+      })
+  })
