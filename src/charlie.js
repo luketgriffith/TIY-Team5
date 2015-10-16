@@ -7,17 +7,19 @@
   let beerData = function (obj) { 
 
     $('.beer').append(`
-    <div class="menuItemTitle">${ obj.item }</div>
-    <div class="menuItemPrice">${ obj.price }</div>
-    <div class="menuItemDescription">${ obj.description }</div>
+      <div class="menuLeft">
+        <div class="menuItemTitle">${ obj.item }</div>
+        <div class="menuItemPrice">${ obj.price }</div>
+        <div class="menuItemDescription">${ obj.description }</div>
+      </div>
     `)
 
     if (obj.allergies === 1) {
-      $('.beer').append("<div class='menuSpecialIcons'><span class='entypo-attention'></span></div>");
+      $('.beer').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-attention'></span></div></div>");
     };
 
     if (obj.favorite === 1) {
-      $('.beer').append("<div class='menuSpecialIcons'><span class='entypo-star' title='Favorite'></span></div>");
+      $('.beer').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-star' title='Favorite'></span></div></div>");
     };
 
     $('.beer').append("<br>");
@@ -25,17 +27,19 @@
 
   let entreesData = function (obj) {
     $('.entrees').append(`
-    <div class="menuItemTitle">${ obj.item }</div>
-    <div class="menuItemPrice">${ obj.price }</div>
-    <div class="menuItemDescription">${ obj.description }</div>
+      <div class="menuLeft">
+        <div class="menuItemTitle">${ obj.item }</div>
+        <div class="menuItemPrice">${ obj.price }</div>
+        <div class="menuItemDescription">${ obj.description }</div>
+      </div>
     `)
 
     if (obj.allergies === 1) {
-      $('.entrees').append("<div class='menuSpecialIcons'><span class='entypo-attention'></span></div>");
+      $('.entrees').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-attention'></span></div></div>");
     };
 
     if (obj.favorite === 1) {
-      $('.entrees').append("<div class='menuSpecialIcons'><span class='entypo-star'></span></div>");
+      $('.entrees').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-star'></span></div></div>");
     };
 
     $('.entrees').append("<br>");
@@ -43,13 +47,15 @@
 
   let gamesData = function (obj) {
     $('.games').append(`
-    <div class="menuItemTitle">${ obj.item }</div>
-    <div class="menuItemPrice">${ obj.price }</div>
-    <div class="menuItemDescription">${ obj.description }</div>
+      <div class="menuLeft">
+        <div class="menuItemTitle">${ obj.item }</div>
+        <div class="menuItemPrice">${ obj.price }</div>
+        <div class="menuItemDescription">${ obj.description }</div>
+      </div>
     `)
 
     if (obj.favorite === 1) {
-      $('.games').append("<div class='menuSpecialIcons'><span class='entypo-star'></span></div>");
+      $('.games').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-star'></span></div></div>");
     };
 
     $('.games').append("<br>");
