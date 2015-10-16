@@ -271,7 +271,7 @@ header {
   max-height: 900px;
   overflow: scroll;
   text-overflow: hidden;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   background-color: #F7F7F7; }
   .ourStoryTab img {
     float: left;
@@ -290,7 +290,7 @@ header {
   max-height: 900px;
   overflow: scroll;
   text-overflow: hidden;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   background-color: #F7F7F7; }
   .menu hr {
     border: 1px solid #DADADA;
@@ -359,7 +359,7 @@ header {
   max-width: 0px;
   overflow: hidden;
   text-overflow: hidden;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   background-color: #F7F7F7; }
   .reservationTab form {
     width: 660px; }
@@ -395,7 +395,7 @@ header {
   max-width: 0px;
   overflow: scroll;
   text-overflow: hidden;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   background-color: #F7F7F7; }
   .comments textarea {
     margin: 50px; }
