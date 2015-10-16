@@ -4,3 +4,5 @@ node_modules
 .divshot-cache
 src/bourbon
 src/neat
+divshot.json
+.divshot-cache
