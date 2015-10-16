@@ -476,19 +476,12 @@ header {
 .shown{
   float: left;
   max-width: 660px;
-  border: 1px solid black;
   height: 750px;
   background-color: #F7F7F7;
 }
 .selected{
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  border-bottom: 5px solid #F7F7F7;
-  overflow: hidden; 
+  overflow: hidden;
 }     
-
-
 
 .foodPhotos{
   float: right; 
