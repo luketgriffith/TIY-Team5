@@ -291,7 +291,9 @@ header {
   overflow: scroll;
   text-overflow: hidden;
   transition: all 0.5s ease;
-  background-color: #F7F7F7; }
+  background-color: #F7F7F7;
+  position: relative; }
+
   .menu hr {
     border: 1px solid #DADADA;
     width: 98%; }
@@ -322,14 +324,46 @@ header {
       font-style: normal; }
       .menu .menuRight .menuSpecialIcons .entypo-attention {
         font-size: 16px;
-        color: red;
-        display: inline-block;
-        float: right; }
+        color: red; }
+      .menu .menuRight .menuSpecialIcons .hoverAttn {
+        width: 230px;
+        height: 100px;
+        background-color: #E7E7E7;
+        border: 1px solid #D1D1D1;
+        border-radius: 1px;
+        color: #3D3D3D;
+        left: 64%;
+        position: absolute;
+        font-size: 12px;
+        padding: 4px 0 4px 4px;
+        opacity: 0; }
+        .menu .menuRight .menuSpecialIcons .hoverAttn p {
+          font-size: 10px;
+          margin-top: 0; }
+      .menu .menuRight .menuSpecialIcons .entypo-attention:hover + .hoverAttn {
+        opacity: 1; }
       .menu .menuRight .menuSpecialIcons .entypo-star {
         font-size: 16px;
         color: #FFCD00;
         display: inline-block;
         float: right; }
+      .menu .menuRight .menuSpecialIcons .hoverFav {
+        width: 230px;
+        height: 100px;
+        background-color: #E7E7E7;
+        border: 1px solid #D1D1D1;
+        border-radius: 1px;
+        color: #3D3D3D;
+        left: 64%;
+        position: absolute;
+        font-size: 12px;
+        padding: 4px 0 4px 4px;
+        opacity: 0; }
+        .menu .menuRight .menuSpecialIcons .hoverFav p {
+          font-size: 10px;
+          margin-top: 0; }
+      .menu .menuRight .menuSpecialIcons .entypo-star:hover + .hoverFav {
+        opacity: 1; }
   .menu .beer {
     font-size: 18px;
     font-style: italic;

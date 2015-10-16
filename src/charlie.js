@@ -15,11 +15,25 @@
     `)
 
     if (obj.allergies === 1) {
-      $('.beer').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-attention'></span></div></div>");
+      $('.beer').append(`
+        <div class='menuRight'>
+          <div class='menuSpecialIcons'>
+            <div class='entypo-attention'></div>
+            <div class='hoverAttn'>Allergy Info
+              <hr>
+              <p>Bacon ipsum dolor amet veniam in tail chuck in corned beef mollit, enim turkey.</p>
+            </div>
+          </div>
+        </div>`);
     };
 
     if (obj.favorite === 1) {
-      $('.beer').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-star' title='Favorite'></span></div></div>");
+      $('.beer').append(`
+        <div class='menuRight'>
+          <div class='menuSpecialIcons'>
+            <span class='entypo-star'></span>
+          </div>
+        </div>`);
     };
 
     $('.beer').append("<br>");
@@ -35,7 +49,16 @@
     `)
 
     if (obj.allergies === 1) {
-      $('.entrees').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-attention'></span></div></div>");
+      $('.entrees').append(`
+        <div class='menuRight'>
+          <div class='menuSpecialIcons'>
+            <span class='entypo-attention'></span>
+            <div class='hoverAttn'>Allergy Info
+              <hr>
+              <p>Bacon ipsum dolor amet veniam in tail chuck in corned beef mollit, enim turkey.</p>
+            </div>
+          </div>
+        </div>`);
     };
 
     if (obj.favorite === 1) {
