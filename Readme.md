@@ -5,9 +5,13 @@ The Iron Yard : Group Project
 The following students participated in this project:
 
 John Rae - https://github.com/Johnrae
+
 Luke Griffith- https://github.com/luketgriffith
+
 Charlie Miller- https://github.com/charlahcodes
+
 Maryam Ali- https://github.com/itawtitawapuddytat
+
 
 
 We used three API's to create this site:
