@@ -85,6 +85,11 @@ para4.on('click', function(){
  
 }) 
 
+var message= $('.submitBtn');
+message.on('click', function(){
+  $('.message').toggleClass('appear');
+  $('.submitBtn').text('Un-submit');
+})
 // })();
 
 

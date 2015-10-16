@@ -14,7 +14,8 @@ html {
 body {
   font-size: 62.5%;
   width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fdfcfc; }
 
 header {
   height: 100px;
@@ -61,7 +62,7 @@ header {
   .javadiv h3 {
     padding: 10px 0;
     margin: 20px 18px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #ececec;
     color: #303030;
     font-weight: normal; }
 
@@ -88,7 +89,7 @@ header {
     padding: 10px 0;
     margin: 20px 18px;
     margin-top: 10px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #4C4C4C;
     color: #303030;
     font-size: 16px;
     font-weight: normal; }
@@ -99,9 +100,9 @@ header {
   margin-right: 2.35765%;
   width: 31.76157%;
   float: left;
-  background-color: #EBEBEB;
+  background-color: #fdfcfc;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid #4C4C4C;
   margin-bottom: 30px; }
   .news:last-child {
     margin-right: 0; }
@@ -179,9 +180,9 @@ header {
   margin-right: 2.35765%;
   width: 31.76157%;
   float: left;
-  background-color: #EBEBEB;
+  background-color: #fdfcfc;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid #4C4C4C;
   margin-bottom: 30px; }
   .special:last-child {
     margin-right: 0; }
@@ -227,9 +228,9 @@ header {
   margin-right: 2.35765%;
   width: 31.76157%;
   float: left;
-  background-color: #EBEBEB;
+  background-color: #fdfcfc;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid #4C4C4C;
   margin-bottom: 30px; }
   .location:last-child {
     margin-right: 0; }
@@ -287,6 +288,10 @@ header {
     clear: both; }
 
 /*************************Slider Stuff************************/
+.slider {
+  width: 70%;
+  float: left; }
+
 .buttons {
   height: 50px; }
   .buttons span {
@@ -310,11 +315,13 @@ header {
     margin: 25px 2.5%; }
   .ourStoryTab p {
     margin: 10px;
-    background-color: #F7F7F7; }
+    background-color: #F7F7F7;
+    font-size: 14px; }
 
 .menu {
   float: left;
   max-width: 0px;
+  max-height: 750px;
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
@@ -382,7 +389,7 @@ header {
   float: left;
   max-width: 660px;
   border: 1px solid black;
-  height: 400px;
+  height: 750px;
   background-color: #F7F7F7; }
 
 .selected {
@@ -393,10 +400,34 @@ header {
   overflow: hidden; }
 
 .foodPhotos {
-  float: right; }
+  float: right;
+  width: 25%; }
+  .foodPhotos h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+    margin: 10px auto;
+    text-align: center; }
+  .foodPhotos .flickrImg {
+    float: right;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #4C4C4C;
+    padding: 5px;
+    margin-bottom: 20px; }
 
-.flickrImg {
-  float: right; }
+.message {
+  display: none;
+  font-size: 24px;
+  transition: all 1s ease; }
+
+.appear {
+  display: block;
+  height: 90px;
+  width: 300px;
+  border: 1px solid black;
+  margin-left: 150px;
+  text-align: center;
+  transition: all 1s ease; }
 
 footer {
   height: 20px;
