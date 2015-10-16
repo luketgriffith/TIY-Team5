@@ -81,4 +81,9 @@ para4.on('click', function () {
   $('.menu').removeClass('shown');
 });
 
+var message = $('.submitBtn');
+message.on('click', function () {
+  $('.message').toggleClass('appear');
+  $('.submitBtn').text('Un-submit');
+});
 // })();
