@@ -244,7 +244,9 @@ header {
 /*************************Slider Stuff************************/
 .slider {
   width: 70%;
-  float: left; }
+  height: 1000px;
+  float: left;
+  padding-top: 15px; }
 
 .buttons {
   height: 50px; }
@@ -258,11 +260,15 @@ header {
     font-size: 4em; }
     .buttons span:hover {
       cursor: pointer; }
+    .buttons span.selected {
+      overflow: hidden;
+      border-top: 5px solid #DD343E;
+      padding-top: 5px; }
 
 .ourStoryTab {
   float: left;
   max-width: 0px;
-  max-height: 750px;
+  max-height: 900px;
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
@@ -281,7 +287,7 @@ header {
   float: left;
   max-width: 0px;
   width: 100%;
-  max-height: 750px;
+  max-height: 900px;
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
@@ -349,6 +355,7 @@ header {
 .reservationTab {
   font-size: 14px;
   float: left;
+  height: 900px;
   max-width: 0px;
   overflow: hidden;
   text-overflow: hidden;
@@ -384,6 +391,7 @@ header {
 
 .comments {
   float: left;
+  height: 900px;
   max-width: 0px;
   overflow: scroll;
   text-overflow: hidden;
@@ -409,18 +417,8 @@ header {
 .shown {
   float: left;
   max-width: 660px;
-  height: 750px;
+  height: 900px;
   background-color: #F7F7F7; }
-
-.selected {
-<<<<<<< HEAD
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  border-bottom: 5px solid #F7F7F7;
-=======
->>>>>>> 3c75319df0cbe564186492e957b0615c37d37518
-  overflow: hidden; }
 
 .foodPhotos {
   float: right;
