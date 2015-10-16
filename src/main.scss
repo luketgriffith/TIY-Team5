@@ -232,59 +232,6 @@ header {
   margin: 20px 3px;
 }
 
-.menu {
-  width: 700px;
-
-  .entypo-attention {
-    font-size: 16px;
-    color: red;
-    display: inline;
-    position: relative;
-  }
-
-  .entypo-attention:hover:after {
-    background: #E7E7E7;
-    color: #545454;
-    border-radius: 2px;
-    border: 1px solid #D1D1D1;
-    content: "Allergy info";
-    padding: 5px 200px 5px 15px;
-    
-  }
-
-  .entypo-star {
-    font-size: 16px;
-    color: #FFCD00;
-  }
-
-  .entypo-star:hover:after {
-    background: #E7E7E7;
-    color: #545454;
-    border-radius: 2px;
-    border: 1px solid #D1D1D1;
-    content: "Favorite";
-    padding: 5px 200px 5px 15px;
-  }
-
-  .menuItemTitle {
-    font-size: 16px;
-    float:left;
-  }
-
-  .menuItemPrice {
-    float: right;
-  }
-
-  .menuItemDescription {
-    clear:both;
-  }
-
-  .menuSpecialIcons {
-    clear:both;
-  }
-}
-
-
 /*************************Slider Stuff************************/
 
 .buttons{
@@ -296,8 +243,6 @@ header {
     margin: 20px 15px;
     padding: 10px;
     background-color: #F7F7F7;
-    
-
   }
 }
 .ourStoryTab{
@@ -320,28 +265,100 @@ header {
     background-color: #F7F7F7;
   }
 }
+
+// menu
 .menu{
   float: left;
   max-width: 0px;
-
+  width: 700px;
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
   background-color: #F7F7F7;
+
   .menuItemTitle{
     margin: 10px;
+    font-size: 16px;
+    float: left;
   }
   .menuItemPrice{
     font-size: 14px;
     margin: 10px;
+    float: right;
   }
   .menuItemDescription{
     font-size: 12px;
+    font-style: none;
     margin: 10px;
+    float: left;
+    clear:both;
+    width: 500px;
   }
   .menuSpecialIcons{
     margin: 10px;
+    float: right;
+    clear:both;
+
+
+    .entypo-attention {
+      font-size: 16px;
+      color: red;
+      display: inline-block;
+      float: right;
+    }
+
+    .entypo-attention:hover:after {
+      background: #E7E7E7;
+      color: #545454;
+      border-radius: 2px;
+      border: 1px solid #D1D1D1;
+      content: "Allergy info";
+      padding: 5px 200px 5px 15px;
+      
+    }
+
+    .entypo-star {
+      font-size: 16px;
+      color: #FFCD00;
+      display: inline-block;
+      float: right;
+    }
+
+    .entypo-star:hover:after {
+      background: #E7E7E7;
+      color: #545454;
+      border-radius: 2px;
+      border: 1px solid #D1D1D1;
+      content: "Favorite";
+      padding: 5px 200px 5px 15px;
+    }
   }
+
+  .beer {
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+  }
+
+  .entrees {
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+  }
+
+  .games {
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+  }
+
+
 }
 .reservationTab{
   font-size: 14px;
