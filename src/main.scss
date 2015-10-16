@@ -8,6 +8,10 @@ $black: #4C4C4C;
 $white:#fdfcfc;
 $grey: #ececec;
 
+@mixin imagekit {
+  border: 1px solid $black; 
+  border-radius: 2px;
+}
 
 /* entypo */
 [class*="entypo-"]:before {
@@ -65,18 +69,6 @@ header {
   }
 }
 
-
-.javadiv{
-  @include outer-container;
-  h3{
-    padding: 10px 0;
-    margin: 20px 18px;
-    border-bottom: 1px solid $grey;
-    color: #303030;
-    font-weight: normal;
-  }
-}
-
 .mainImage {
   background-image: url(http://www.hamms-hat.com/wp-content/uploads/2014/06/landl3.jpg);
   background-size: cover;
@@ -95,13 +87,13 @@ header {
   max-width: 100%;
  
   h3{
-    padding: 10px 0;
+    padding: 5px 0;
     margin: 20px 18px;
     margin-top: 10px;
     border-bottom: 1px solid $black;
     color: #303030;
-    font-size: 16px;
-    font-weight: normal;
+    font-family: 'Amatic SC' , cursive;
+    font-size: 3em;
   }
 }
    
@@ -143,6 +135,7 @@ header {
     padding-left: 10px;
   }
 }
+
 .news p{   
 
     display: block;
@@ -157,6 +150,7 @@ header {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .news a{
   text-decoration: none;
   color: black;
@@ -164,11 +158,12 @@ header {
   float: right;
   margin: 2px 8px;
   padding: 2px;
-
 }
+
 .news h4{
   margin-top: 4px;
 }
+
 .news a{
   text-decoration: none;
   color: black;
@@ -179,14 +174,14 @@ header {
 
 .special{
   @include span-columns(4);
-  float: left;
+  float: left; 
   background-color: $white;
   height: 300px;
   border: 1px solid $black;
   margin-bottom: 30px;
  
- 
 }
+
 .specialImg{
   background-image: url('http://www.truefoodkitchen.com/wp-content/uploads/2013/03/mg_9050.jpg');
   background-size: cover;
@@ -194,12 +189,15 @@ header {
   height: 100px;
   width: 90%;
   margin: 0 5%;
+  @include imagekit;
 }
+
 .special p{
   padding: 5px;
   font-size: 12px;
-  margin: 20px 5px;
+  margin: 10px 5px;
 }
+
 .specialTitle{
   @include span-columns(10);
   float: left;
@@ -246,7 +244,9 @@ header {
 
 .slider{
   width: 70%;
+  height: 1000px;
   float: left;
+  padding-top: 15px;
 }
 
 
@@ -260,15 +260,20 @@ header {
     background-color: #F7F7F7;
     font-family: 'Amatic SC', cursive;
     font-size: 4em;
-  &:hover {
-    cursor: pointer;
-  } 
+    &:hover {
+     cursor: pointer;
+    } 
+    &.selected{
+      overflow: hidden;
+      border-top: 5px solid $red;
+      padding-top: 5px;
+    }     
   }
 }
 .ourStoryTab{
   float: left;
   max-width: 0px;
-  max-height: 750px;
+  max-height: 900px;
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
@@ -292,7 +297,7 @@ header {
   float: left;
   max-width: 0px;
   width: 100%;
-  max-height: 750px;  
+  max-height: 900px;  
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
@@ -428,7 +433,7 @@ header {
 .reservationTab{
   font-size: 14px;
   float: left;
-  
+  height: 900px;
   max-width: 0px;
   overflow: hidden;
   text-overflow: hidden;
@@ -465,11 +470,14 @@ header {
     &:hover {
       background-color: $red;
     }
+    &:focus {
+      outline: 0;
+    }
   }
 }
 .comments{
   float: left;
-  
+  height: 900px;
   max-width: 0px;
   overflow: scroll;
   text-overflow: hidden;
@@ -491,28 +499,18 @@ header {
     &:hover {
       background-color: $red;
     }
+    &:focus {
+      outline: 0;
+    }
   }
 
  } 
 .shown{
   float: left;
   max-width: 660px;
-  border: 1px solid black;
-  height: 750px;
+  height: 900px;
   background-color: #F7F7F7;
 }
-.selected{
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  border-bottom: 5px solid #F7F7F7;
-  overflow: hidden;
-
-  
-}     
-
-
-
 
 .foodPhotos{
   float: right; 
@@ -525,12 +523,10 @@ header {
     text-align: center;
   }
 
-  .flickrImg{
+  img{
     float: right;
-    border: 1px solid black; 
-    border-radius: 3px;
-    background-color: $black;
-    padding: 5px;
+    border: 1px solid $black; 
+    border-radius: 2px;
     margin-bottom: 20px;
   }
 }
@@ -552,8 +548,10 @@ header {
 footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;
+  font-size: 2em;
   clear: both;
   font-family: 'Amatic SC', cursive;
+  font-size: 2.5em;
   p {
     padding-bottom: 20px;
   }
