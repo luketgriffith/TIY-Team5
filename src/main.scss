@@ -444,9 +444,14 @@ header {
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-left: 1px solid black;
-  border-bottom: 1px solid #F7F7F7;
+  border-bottom: 5px solid #F7F7F7;
   overflow: hidden;
+
+  
+}     
+
 }
+
 
 .foodPhotos{
   float: right; 
@@ -481,6 +486,7 @@ header {
   margin-left: 150px;
   text-align: center;
   transition: all 1s ease;
+  z-index: 5;
 }
 footer {
   height: 20px;
