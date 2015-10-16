@@ -32,52 +32,53 @@ function foodPics(setId) {
 
 // });
 
-(function () {
+// (function (){
 
-  var para = $('#storyTitle');
-  para.on('click', function () {
-    para.addClass('selected');
-    $('.ourStoryTab').addClass('shown');
-    $('#menuTitle').removeClass('selected');
-    $('#reservationsTitle').removeClass('selected');
-    $('#commentsTitle').removeClass('selected');
-    $('.menu').removeClass('shown');
-    $('.reservationTab').removeClass('shown');
-    $('.comments').removeClass('shown');
-  });
+var para = $('#storyTitle');
+para.on('click', function () {
+  para.addClass('selected');
+  $('.ourStoryTab').addClass('shown');
+  $('#menuTitle').removeClass('selected');
+  $('#reservationsTitle').removeClass('selected');
+  $('#commentsTitle').removeClass('selected');
+  $('.menu').removeClass('shown');
+  $('.reservationTab').removeClass('shown');
+  $('.comments').removeClass('shown');
+});
 
-  var para2 = $('#menuTitle');
-  para2.on('click', function () {
-    para2.addClass('selected');
-    $('.menu').addClass('shown');
-    $('#storyTitle').removeClass('selected');
-    $('#reservationsTitle').removeClass('selected');
-    $('#commentsTitle').removeClass('selected');
-    $('.ourStoryTab').removeClass('shown');
-    $('.reservationTab').removeClass('shown');
-    $('.comments').removeClass('shown');
-  });
+var para2 = $('#menuTitle');
+para2.on('click', function () {
+  para2.addClass('selected');
+  $('.menu').addClass('shown');
+  $('#storyTitle').removeClass('selected');
+  $('#reservationsTitle').removeClass('selected');
+  $('#commentsTitle').removeClass('selected');
+  $('.ourStoryTab').removeClass('shown');
+  $('.reservationTab').removeClass('shown');
+  $('.comments').removeClass('shown');
+});
 
-  var para3 = $('#reservationsTitle');
-  para3.on('click', function () {
-    para3.addClass('selected');
-    $('.reservationTab').addClass('shown');
-    $('#storyTitle').removeClass('selected');
-    $('#menuTitle').removeClass('selected');
-    $('#commentsTitle').removeClass('selected');
-    $('.menu').removeClass('shown');
-    $('.ourStoryTab').removeClass('shown');
-    $('.comments').removeClass('shown');
-  });
-  var para4 = $('#commentsTitle');
-  para4.on('click', function () {
-    $('.comments').addClass('shown');
-    $('#commentsTitle').addClass('selected');
-    $('#storyTitle').removeClass('selected');
-    $('#reservationsTitle').removeClass('selected');
-    $('#menuTitle').removeClass('selected');
-    $('.ourStoryTab').removeClass('shown');
-    $('.reservationTab').removeClass('shown');
-    $('.menu').removeClass('shown');
-  });
-})();
+var para3 = $('#reservationsTitle');
+para3.on('click', function () {
+  para3.addClass('selected');
+  $('.reservationTab').addClass('shown');
+  $('#storyTitle').removeClass('selected');
+  $('#menuTitle').removeClass('selected');
+  $('#commentsTitle').removeClass('selected');
+  $('.menu').removeClass('shown');
+  $('.ourStoryTab').removeClass('shown');
+  $('.comments').removeClass('shown');
+});
+var para4 = $('#commentsTitle');
+para4.on('click', function () {
+  $('.comments').addClass('shown');
+  $('#commentsTitle').addClass('selected');
+  $('#storyTitle').removeClass('selected');
+  $('#reservationsTitle').removeClass('selected');
+  $('#menuTitle').removeClass('selected');
+  $('.ourStoryTab').removeClass('shown');
+  $('.reservationTab').removeClass('shown');
+  $('.menu').removeClass('shown');
+});
+
+// })();

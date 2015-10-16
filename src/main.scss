@@ -289,7 +289,7 @@ header {
 
 .buttons{
   height: 50px;
-  float: left;    
+  // float: left;    
   span{
     line-height: 50px;
     font-size: 24px;
@@ -323,6 +323,7 @@ header {
 .menu{
   float: left;
   max-width: 0px;
+
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
@@ -345,6 +346,7 @@ header {
 .reservationTab{
   font-size: 14px;
   float: left;
+  
   max-width: 0px;
   overflow: hidden;
   text-overflow: hidden;
@@ -379,6 +381,7 @@ header {
 }
 .comments{
   float: left;
+  
   max-width: 0px;
   overflow: scroll;
   text-overflow: hidden;

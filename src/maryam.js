@@ -35,7 +35,7 @@ function foodPics(setId) {
 
 
 
-(function (){
+// (function (){
   
 var para = $('#storyTitle');
 para.on('click', function(){
@@ -81,11 +81,11 @@ para4.on('click', function(){
   $('#menuTitle').removeClass('selected');
   $('.ourStoryTab').removeClass('shown');
   $('.reservationTab').removeClass('shown');
-   $('.menu').removeClass('shown');
+  $('.menu').removeClass('shown');
  
-})
+}) 
 
-})();
+// })();
 
 
 
