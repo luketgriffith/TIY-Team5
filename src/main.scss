@@ -224,6 +224,7 @@ header {
 .location ul{
   padding: 0;
   padding-left: 29px;
+  text-align: center;
 }
 
 .location li{
@@ -392,8 +393,9 @@ header {
   }button{
     height: 40px;
     width: 70px;
+    background-color: gray;
+    color: white;
     margin-left: 50px;
-    color: black;
     font-size: 14px;
     border-radius: 20em;
   }
@@ -424,6 +426,7 @@ footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;
   clear: both;
+  font-family: 'Amatic SC', cursive;
   p {
     padding-bottom: 20px;
   }
