@@ -11,11 +11,11 @@
     $('.beer').append('\n      <div class="menuLeft">\n        <div class="menuItemTitle">' + obj.item + '</div>\n        <div class="menuItemPrice">' + obj.price + '</div>\n        <div class="menuItemDescription">' + obj.description + '</div>\n      </div>\n    ');
 
     if (obj.allergies === 1) {
-      $('.beer').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-attention'></span></div></div>");
+      $('.beer').append('\n        <div class=\'menuRight\'>\n          <div class=\'menuSpecialIcons\'>\n            <div class=\'entypo-attention\'></div>\n            <div class=\'hoverAttn\'>Allergy Info\n              <hr>\n              <p>Bacon ipsum dolor amet veniam in tail chuck in corned beef mollit, enim turkey.</p>\n            </div>\n          </div>\n        </div>');
     };
 
     if (obj.favorite === 1) {
-      $('.beer').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-star' title='Favorite'></span></div></div>");
+      $('.beer').append('\n        <div class=\'menuRight\'>\n          <div class=\'menuSpecialIcons\'>\n            <span class=\'entypo-star\'></span>\n          </div>\n        </div>');
     };
 
     $('.beer').append("<br>");
@@ -25,7 +25,7 @@
     $('.entrees').append('\n      <div class="menuLeft">\n        <div class="menuItemTitle">' + obj.item + '</div>\n        <div class="menuItemPrice">' + obj.price + '</div>\n        <div class="menuItemDescription">' + obj.description + '</div>\n      </div>\n    ');
 
     if (obj.allergies === 1) {
-      $('.entrees').append("<div class='menuRight'><div class='menuSpecialIcons'><span class='entypo-attention'></span></div></div>");
+      $('.entrees').append('\n        <div class=\'menuRight\'>\n          <div class=\'menuSpecialIcons\'>\n            <span class=\'entypo-attention\'></span>\n            <div class=\'hoverAttn\'>Allergy Info\n              <hr>\n              <p>Bacon ipsum dolor amet veniam in tail chuck in corned beef mollit, enim turkey.</p>\n            </div>\n          </div>\n        </div>');
     };
 
     if (obj.favorite === 1) {
