@@ -405,15 +405,17 @@ header {
 .shown {
   float: left;
   max-width: 660px;
-  border: 1px solid black;
   height: 750px;
   background-color: #F7F7F7; }
 
 .selected {
+<<<<<<< HEAD
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-left: 1px solid black;
   border-bottom: 5px solid #F7F7F7;
+=======
+>>>>>>> 3c75319df0cbe564186492e957b0615c37d37518
   overflow: hidden; }
 
 .foodPhotos {
