@@ -286,12 +286,14 @@ header {
 
 
 /*************************Slider Stuff************************/
+
 .buttons{
   height: 50px;
+  // float: left;    
   span{
     line-height: 50px;
     font-size: 24px;
-    margin: 20px 30px;
+    margin: 20px 15px;
     padding: 10px;
     background-color: #F7F7F7;
     
@@ -321,6 +323,7 @@ header {
 .menu{
   float: left;
   max-width: 0px;
+
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
@@ -343,6 +346,7 @@ header {
 .reservationTab{
   font-size: 14px;
   float: left;
+  
   max-width: 0px;
   overflow: hidden;
   text-overflow: hidden;
@@ -375,7 +379,25 @@ header {
     border-radius: 15em;
   }
 }
+.comments{
+  float: left;
   
+  max-width: 0px;
+  overflow: scroll;
+  text-overflow: hidden;
+  transition: all 1s ease;
+  background-color: #F7F7F7;
+  textarea{
+    margin: 50px;
+  }button{
+    height: 40px;
+    width: 70px;
+    margin-left: 50px;
+    color: black;
+    font-size: 14px;
+    border-radius: 20em;
+  }
+ } 
 .shown{
   float: left;
   max-width: 660px;
@@ -390,10 +412,18 @@ header {
   border-bottom: 1px solid #F7F7F7;
   overflow: hidden;
 }
+.foodPhotos{
+  float: right;   
+
+}
+.flickrImg{
+  float: right;
+}
 
 footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;
+  clear: both;
   p {
     padding-bottom: 20px;
   }
