@@ -14,7 +14,8 @@ html {
 body {
   font-size: 62.5%;
   width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fdfcfc; }
 
 header {
   height: 100px;
@@ -61,7 +62,7 @@ header {
   .javadiv h3 {
     padding: 10px 0;
     margin: 20px 18px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #ececec;
     color: #303030;
     font-weight: normal; }
 
@@ -88,7 +89,7 @@ header {
     padding: 10px 0;
     margin: 20px 18px;
     margin-top: 10px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #4C4C4C;
     color: #303030;
     font-size: 16px;
     font-weight: normal; }
@@ -99,9 +100,9 @@ header {
   margin-right: 2.35765%;
   width: 31.76157%;
   float: left;
-  background-color: #EBEBEB;
+  background-color: #fdfcfc;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid #4C4C4C;
   margin-bottom: 30px; }
   .news:last-child {
     margin-right: 0; }
@@ -179,9 +180,9 @@ header {
   margin-right: 2.35765%;
   width: 31.76157%;
   float: left;
-  background-color: #EBEBEB;
+  background-color: #fdfcfc;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid #4C4C4C;
   margin-bottom: 30px; }
   .special:last-child {
     margin-right: 0; }
@@ -227,9 +228,9 @@ header {
   margin-right: 2.35765%;
   width: 31.76157%;
   float: left;
-  background-color: #EBEBEB;
+  background-color: #fdfcfc;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid #4C4C4C;
   margin-bottom: 30px; }
   .location:last-child {
     margin-right: 0; }
@@ -244,48 +245,19 @@ header {
 
 .location ul {
   padding: 0;
-  padding-left: 29px; }
+  padding-left: 29px;
+  text-align: center; }
 
 .location li {
   display: inline-block;
   font-size: 12px;
   margin: 20px 3px; }
 
-.menu {
-  width: 700px; }
-  .menu .entypo-attention {
-    font-size: 16px;
-    color: red;
-    display: inline;
-    position: relative; }
-  .menu .entypo-attention:hover:after {
-    background: #E7E7E7;
-    color: #545454;
-    border-radius: 2px;
-    border: 1px solid #D1D1D1;
-    content: "Allergy info";
-    padding: 5px 200px 5px 15px; }
-  .menu .entypo-star {
-    font-size: 16px;
-    color: #FFCD00; }
-  .menu .entypo-star:hover:after {
-    background: #E7E7E7;
-    color: #545454;
-    border-radius: 2px;
-    border: 1px solid #D1D1D1;
-    content: "Favorite";
-    padding: 5px 200px 5px 15px; }
-  .menu .menuItemTitle {
-    font-size: 16px;
-    float: left; }
-  .menu .menuItemPrice {
-    float: right; }
-  .menu .menuItemDescription {
-    clear: both; }
-  .menu .menuSpecialIcons {
-    clear: both; }
-
 /*************************Slider Stuff************************/
+.slider {
+  width: 70%;
+  float: left; }
+
 .buttons {
   height: 50px; }
   .buttons span {
@@ -315,21 +287,73 @@ header {
 .menu {
   float: left;
   max-width: 0px;
+  width: 700px;
   max-height: 750px;
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
   background-color: #F7F7F7; }
   .menu .menuItemTitle {
-    margin: 10px; }
+    margin: 10px;
+    font-size: 16px;
+    float: left; }
   .menu .menuItemPrice {
     font-size: 14px;
-    margin: 10px; }
+    margin: 10px;
+    float: right; }
   .menu .menuItemDescription {
     font-size: 12px;
-    margin: 10px; }
+    font-style: none;
+    margin: 10px;
+    float: left;
+    clear: both;
+    width: 500px; }
   .menu .menuSpecialIcons {
-    margin: 10px; }
+    margin: 10px;
+    float: right;
+    clear: both; }
+    .menu .menuSpecialIcons .entypo-attention {
+      font-size: 16px;
+      color: red;
+      display: inline-block;
+      float: right; }
+    .menu .menuSpecialIcons .entypo-attention:hover:after {
+      background: #E7E7E7;
+      color: #545454;
+      border-radius: 2px;
+      border: 1px solid #D1D1D1;
+      content: "Allergy info";
+      padding: 5px 200px 5px 15px; }
+    .menu .menuSpecialIcons .entypo-star {
+      font-size: 16px;
+      color: #FFCD00;
+      display: inline-block;
+      float: right; }
+    .menu .menuSpecialIcons .entypo-star:hover:after {
+      background: #E7E7E7;
+      color: #545454;
+      border-radius: 2px;
+      border: 1px solid #D1D1D1;
+      content: "Favorite";
+      padding: 5px 200px 5px 15px; }
+  .menu .beer {
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left; }
+  .menu .entrees {
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left; }
+  .menu .games {
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left; }
 
 .reservationTab {
   font-size: 14px;
@@ -373,8 +397,9 @@ header {
   .comments button {
     height: 40px;
     width: 70px;
+    background-color: gray;
+    color: white;
     margin-left: 50px;
-    color: black;
     font-size: 14px;
     border-radius: 20em; }
 
@@ -394,10 +419,20 @@ header {
   z-index: 100; }
 
 .foodPhotos {
-  float: right; }
-
-.flickrImg {
-  float: right; }
+  float: right;
+  width: 25%; }
+  .foodPhotos h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+    margin: 10px auto;
+    text-align: center; }
+  .foodPhotos .flickrImg {
+    float: right;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #4C4C4C;
+    padding: 5px;
+    margin-bottom: 20px; }
 
 .message {
   display: none;
@@ -417,6 +452,7 @@ header {
 footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;
-  clear: both; }
+  clear: both;
+  font-family: 'Amatic SC', cursive; }
   footer p {
     padding-bottom: 20px; }

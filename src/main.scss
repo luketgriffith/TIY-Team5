@@ -2,6 +2,13 @@
 @import 'neat/neat';
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
+$red: #DD343E;
+$egg: #F5F5ED;
+$black: #4C4C4C;
+$white:#fdfcfc;
+$grey: #ececec;
+
+
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -11,6 +18,7 @@ body {
   font-size: 62.5%;
   width: 1000px;
   margin: 0 auto;
+  background-color: $white;
 }
 
 header {
@@ -62,7 +70,7 @@ header {
   h3{
     padding: 10px 0;
     margin: 20px 18px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid $grey;
     color: #303030;
     font-weight: normal;
   }
@@ -89,7 +97,7 @@ header {
     padding: 10px 0;
     margin: 20px 18px;
     margin-top: 10px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid $black;
     color: #303030;
     font-size: 16px;
     font-weight: normal;
@@ -103,9 +111,9 @@ header {
 
   @include span-columns(4);
   float: left;
-  background-color: #EBEBEB;
+  background-color: $white;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid $black;
   margin-bottom: 30px;
  
  
@@ -171,9 +179,9 @@ header {
 .special{
   @include span-columns(4);
   float: left;
-  background-color: #EBEBEB;
+  background-color: $white;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid $black;
   margin-bottom: 30px;
  
  
@@ -206,9 +214,9 @@ header {
 .location{
   @include span-columns(4);
   float: left;
-  background-color: #EBEBEB;
+  background-color: $white;
   height: 300px;
-  border: 1px solid #555555;
+  border: 1px solid $black;
   margin-bottom: 30px;
  
 
@@ -224,6 +232,7 @@ header {
 .location ul{
   padding: 0;
   padding-left: 29px;
+  text-align: center;
 }
 
 .location li{
@@ -232,60 +241,13 @@ header {
   margin: 20px 3px;
 }
 
-.menu {
-  width: 700px;
+/*************************Slider Stuff************************/
 
-  .entypo-attention {
-    font-size: 16px;
-    color: red;
-    display: inline;
-    position: relative;
-  }
-
-  .entypo-attention:hover:after {
-    background: #E7E7E7;
-    color: #545454;
-    border-radius: 2px;
-    border: 1px solid #D1D1D1;
-    content: "Allergy info";
-    padding: 5px 200px 5px 15px;
-    
-  }
-
-  .entypo-star {
-    font-size: 16px;
-    color: #FFCD00;
-  }
-
-  .entypo-star:hover:after {
-    background: #E7E7E7;
-    color: #545454;
-    border-radius: 2px;
-    border: 1px solid #D1D1D1;
-    content: "Favorite";
-    padding: 5px 200px 5px 15px;
-  }
-
-  .menuItemTitle {
-    font-size: 16px;
-    float:left;
-  }
-
-  .menuItemPrice {
-    float: right;
-  }
-
-  .menuItemDescription {
-    clear:both;
-  }
-
-  .menuSpecialIcons {
-    clear:both;
-  }
+.slider{
+  width: 70%;
+  float: left;
 }
 
-
-/*************************Slider Stuff************************/
 
 .buttons{
   height: 50px;
@@ -296,8 +258,6 @@ header {
     margin: 20px 15px;
     padding: 10px;
     background-color: #F7F7F7;
-    
-
   }
 }
 .ourStoryTab{
@@ -321,28 +281,101 @@ header {
     font-size: 14px;
   }
 }
+
+// menu
 .menu{
   float: left;
   max-width: 0px;
+  width: 700px;
   max-height: 750px;  
   overflow: scroll;
   text-overflow: hidden;
   transition: all 1s ease;
   background-color: #F7F7F7;
+
   .menuItemTitle{
     margin: 10px;
+    font-size: 16px;
+    float: left;
   }
   .menuItemPrice{
     font-size: 14px;
     margin: 10px;
+    float: right;
   }
   .menuItemDescription{
     font-size: 12px;
+    font-style: none;
     margin: 10px;
+    float: left;
+    clear:both;
+    width: 500px;
   }
   .menuSpecialIcons{
     margin: 10px;
+    float: right;
+    clear:both;
+
+
+    .entypo-attention {
+      font-size: 16px;
+      color: red;
+      display: inline-block;
+      float: right;
+    }
+
+    .entypo-attention:hover:after {
+      background: #E7E7E7;
+      color: #545454;
+      border-radius: 2px;
+      border: 1px solid #D1D1D1;
+      content: "Allergy info";
+      padding: 5px 200px 5px 15px;
+      
+    }
+
+    .entypo-star {
+      font-size: 16px;
+      color: #FFCD00;
+      display: inline-block;
+      float: right;
+    }
+
+    .entypo-star:hover:after {
+      background: #E7E7E7;
+      color: #545454;
+      border-radius: 2px;
+      border: 1px solid #D1D1D1;
+      content: "Favorite";
+      padding: 5px 200px 5px 15px;
+    }
   }
+
+  .beer {
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+  }
+
+  .entrees {
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+  }
+
+  .games {
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+  }
+
+
 }
 .reservationTab{
   font-size: 14px;
@@ -393,8 +426,9 @@ header {
   }button{
     height: 40px;
     width: 70px;
+    background-color: gray;
+    color: white;
     margin-left: 50px;
-    color: black;
     font-size: 14px;
     border-radius: 20em;
   }
@@ -412,14 +446,32 @@ header {
   border-left: 1px solid black;
   border-bottom: 5px solid #F7F7F7;
   overflow: hidden;
-  z-index: 100;
+
+  
 }     
-.foodPhotos{
-  float: right;   
 
 }
-.flickrImg{
-  float: right;
+
+
+.foodPhotos{
+  float: right; 
+  width: 25%; 
+
+  h2 {
+    font-family:  'Amatic SC', cursive;  
+    font-size: 4em;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .flickrImg{
+    float: right;
+    border: 1px solid black; 
+    border-radius: 3px;
+    background-color: $black;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
 }
 .message{
   display: none;
@@ -440,6 +492,7 @@ footer {
   height: 20px;
   border-top: 1px solid #C3C3C3;
   clear: both;
+  font-family: 'Amatic SC', cursive;
   p {
     padding-bottom: 20px;
   }
