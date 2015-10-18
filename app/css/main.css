@@ -271,7 +271,7 @@ header {
   max-height: 900px;
   overflow: scroll;
   text-overflow: hidden;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   background-color: #F7F7F7; }
   .ourStoryTab img {
     float: left;
@@ -290,9 +290,10 @@ header {
   max-height: 900px;
   overflow: scroll;
   text-overflow: hidden;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   background-color: #F7F7F7;
   position: relative; }
+
   .menu hr {
     border: 1px solid #DADADA;
     width: 98%; }
@@ -392,7 +393,7 @@ header {
   max-width: 0px;
   overflow: hidden;
   text-overflow: hidden;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   background-color: #F7F7F7; }
   .reservationTab form {
     width: 660px; }
@@ -428,7 +429,7 @@ header {
   max-width: 0px;
   overflow: scroll;
   text-overflow: hidden;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   background-color: #F7F7F7; }
   .comments textarea {
     margin: 50px; }
@@ -453,16 +454,6 @@ header {
   height: 900px;
   background-color: #F7F7F7; }
 
-<<<<<<< HEAD
-.selected {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  border-bottom: 5px solid #F7F7F7;
-  overflow: hidden; }
-
-=======
->>>>>>> master
 .foodPhotos {
   float: right;
   width: 25%; }
